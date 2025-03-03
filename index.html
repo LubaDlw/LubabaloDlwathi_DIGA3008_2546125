@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIGA3008A Week 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lubabalo Dlwathi Portfolio Site</title>
 </head>
 <body>
-  <h1> Week 1 Task </h1>  
-  
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>Lubabalo Dlwathi Portfolio Site</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/htmlcodes/blog.html">Blog</a></li>
+      <li><a href="/htmlcodes/gamedev.html">Game Dev Portfolio</a></li>
+      <li><a href="software.html">Software Dev Portfolio</a></li>
+      <li><a href="visual.html">Visual Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Lubabalo Dlwathi Portfolio Site</h1>
+    <p>Showcasing creativity and innovation in digital media.</p>
+    <img src="hero.jpg" alt="Hero Image">
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="gamedev.html">Game Dev Portfolio</a></li>
+      <li><a href="software.html">Software Dev Portfolio</a></li>
+      <li><a href="visual.html">Visual Portfolio</a></li>
+    </ul>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Lubabalo Dlwathi, a passionate developer and digital creator with a keen interest in game development, software engineering, and visual design. I enjoy exploring innovative solutions that merge technology with art.</p>
+    <img src="about-me.jpg" alt="About Me Image">
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="submit_contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
 </body>
 </html>

@@ -7,45 +7,71 @@
     <meta name="description" content="Lubabalo Dlwathi - Web Developer, Game Developer, and UI/UX Designer creating intuitive digital experiences and engaging games that solve real-world problems.">
     <meta name="author" content="Lubabalo Dlwathi">
     <meta name="keywords" content="web developer, game developer, UI/UX designer, responsive design, interactive games, digital experiences, portfolio">
+    <link rel="stylesheet" href="/css_styles/styles.css">
 </head>
 <body>
     <!-- Header navigation -->
     <header>
+        <div class="name">Lubabalo Dlwathi</div>
         <nav>
-          <h1>Lubabalo Dlwathi</h1>
             <a href="index.html">HOME</a>
             <a href="mainHtmls/portfolio.html">PORTFOLIO</a>
             <a href="mainHtmls/design.html">DESIGN</a>
             <a href="mainHtmls/blog.html">BLOGS</a>
             <a href="mainHtmls/essay.html">ESSAY</a>
-            <a href="mainHtmls/profile.html">PROFILE</a>
+            <a href="mainHtmls/profile.html" class="profile-button">PROFILE</a>
         </nav>
     </header>
     
     <!-- Main content -->
     <main>
-        <section>
-            <h1>Lubabalo Dlwathi</h1>
-            <h2>WEB DEVELOPER | GAME DEVELOPER | UI/UX DESIGNER</h2>
-            
-            <p>Passionate about creating intuitive digital experiences and engaging games that solve real-world problems. With expertise in responsive web design, interactive game development, and user-centered design principles, I bring creative ideas to life through clean code and thoughtful interfaces.</p>
-            
-            <div>
-              <a href = "mainHtmls/portfolio.html"><button>View My Work</button> </a>
-              <a href = "mainHtmls/profile.html"><button>About Me</button> </a>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Lubabalo Dlwathi</h1>
+                <h2>WEB DEVELOPER | GAME DEVELOPER | UI/UX DESIGNER</h2>
+                
+                <p>Passionate about creating intuitive digital experiences and engaging games that solve real-world problems. With expertise in responsive web design, interactive game development, and user-centered design principles, I bring creative ideas to life through clean code and thoughtful interfaces.</p>
+                
+                <div class="buttons">
+                    <a href="mainHtmls/portfolio.html" class="btn primary">View My Work</a>
+                    <a href="mainHtmls/profile.html" class="btn secondary">About Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image"></div>
             </div>
         </section>
         
+        <section class="featured-work">
+            <div class="featured-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </section>
     </main>
     
     <!-- Footer -->
     <footer>
-        <div>
-            <a href="https://github.com/LubaDlw" target="_blank">GitHub</a>
-            <a href="https://lubadlw.itch.io/" target="_blank">Itch.io</a>
-            <a href="https://www.linkedin.com/in/lubabalo-b-dlwathi-336219202/" target="_blank">LinkedIn</a>
+        <div class="footer-content">
+            <div class="logo">Logo</div>
+            <div class="footer-links">
+                <a href="https://github.com/LubaDlw" target="_blank">Link one</a>
+                <a href="https://lubadlw.itch.io/" target="_blank">Link two</a>
+                <a href="https://www.linkedin.com/in/lubabalo-b-dlwathi-336219202/" target="_blank">Link three</a>
+                <a href="#" target="_blank">Link four</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank" class="social-icon">
+                    <span class="icon-instagram"></span>
+                </a>
+                <a href="#" target="_blank" class="social-icon">
+                    <span class="icon-facebook"></span>
+                </a>
+                <a href="#" target="_blank" class="social-icon">
+                    <span class="icon-twitter"></span>
+                </a>
+            </div>
         </div>
-        <div>© 2024 Lubabalo Dlwathi. All rights reserved.</div>
+        <div class="copyright">© 2024 Your Website. All rights reserved.</div>
     </footer>
 </body>
 </html>

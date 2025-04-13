@@ -5,11 +5,9 @@
 body {
   margin: 0;
   font-family: 'Exo 2', sans-serif;
-  background-color: #ECEFF1;
+  background-color: #B0BEC5;
   color: #37474F;
 }
-
-
 
 main {
   max-width: 1200px;
@@ -30,20 +28,34 @@ main > p {
   margin: 0 auto 2rem;
 }
 
-nav a button {
-  font-family: 'Roboto Mono', monospace;
-  background-color: #37474F;
-  color: #ECEFF1;
-  border: 1px solid #37474F;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  cursor: pointer;
-}
+.category-nav {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 3rem 0;
+    padding: 1rem 0;
+  }
+  
+  .category-nav a button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    background-color: #536DFE;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-nav a button:hover {
+    background-color: #00E5FF;
+    color: #37474F;
+    transform: translateY(-2px);
+  }
+  
 
-nav a button:hover {
-  background-color: #00E5FF;
-  color: #37474F;
-}
+
 
 section {
   margin-top: 3rem;
@@ -65,12 +77,13 @@ section article {
 }
 
 article {
-  background-color: white;
-  border: 1px solid #37474F;
-  border-radius: 8px;
-  width: 300px;
+  background-color: #ECEFF1;
+  border: none;
+  border-radius: 1px;
+  width: 350px;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 article h3 {
@@ -85,6 +98,7 @@ article img {
   object-fit: cover;
   margin: 1rem 0;
   background-color: #CFD8DC;
+  border-radius: 12px;
 }
 
 article ul {
@@ -95,17 +109,16 @@ article ul {
 
 article button {
   font-family: 'Roboto Mono', monospace;
-  background-color: #37474F;
-  color: #ECEFF1;
+  background-color: #536DFE;
+  color: white;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 article button:hover {
   background-color: #00E5FF;
   color: #37474F;
 }
-
-

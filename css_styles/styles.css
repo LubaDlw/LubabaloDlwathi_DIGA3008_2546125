@@ -41,7 +41,7 @@ header {
   padding: 1rem 0;
 }
 
-main{
+main, .portfolio-content, .essay-wrapper {
     padding-top: 5.5rem;
 }
 

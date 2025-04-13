@@ -1,0 +1,89 @@
+/* blog.css - Custom styles for the Blogs page only */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Exo+2&family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: #ECEFF1;
+  color: #37474F;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+main h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #37474F;
+  margin-bottom: 1rem;
+}
+
+main > p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #37474F;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* wider min width */
+    gap: 2.5rem; /* slightly increased */
+    margin-top: 2rem;
+  }
+  
+
+.blog-card {
+  background-color: #FFFFFF;
+  border: 1px solid #B0BEC5;
+  border-radius: 12px;
+  padding: 4rem; /* Increased from 1.5rem */
+  text-align: left;
+ 
+  box-shadow: 0 6px 12px rgba(55, 71, 79, 0.1); /* Slightly deeper shadow */
+  transition: transform 0.3s ease;
+}
+
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  border-color: #00E5FF;
+}
+
+.blog-card h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1rem;
+  color: #37474F;
+  margin-bottom: 1rem;
+}
+
+.blog-card ul {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.blog-card button {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #536DFE;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blog-card button:hover {
+  background-color: #00E5FF;
+  color: #37474F;
+}

@@ -1,228 +1,297 @@
-/* General Reset */
+/* Import the fonts (using Google Fonts as an example) */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@700&family=Roboto+Mono:wght@400;700&display=swap');
+
+/* Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.6;
-    color: #333;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.6;
+  background-color: #B0BEC5; /* Metallic Grey for backgrounds and panels */
+  color: #37474F; /* Dark Charcoal for text contrast */
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background-color: #d2d2d2;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #ECEFF1; /* Silver White for clean surfaces */
+  border-bottom: 2px solid #37474F;
 }
 
-header .name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.site-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #37474F;
 }
 
-nav a {
-    color: #333;
-    font-weight: 500;
+nav ul.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-.profile-button {
-    background-color: #333;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
+nav ul.nav-list li a {
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  color: #37474F;
+  transition: color 0.3s ease;
 }
 
-/* Main Content Styles */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+nav ul.nav-list li a:hover {
+  color: #00E5FF; /* Neon Cyan for hover effects */
 }
 
+/* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
-    gap: 40px;
+  background: #ECEFF1; /* Silver White for emphasis */
+  padding: 2rem 0;
 }
 
-.hero-content {
-    flex: 1;
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  /* Prevent wrapping on larger screens */
+  flex-wrap: nowrap;
 }
 
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-text {
+  flex: 1;
+  min-width: 300px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
+.hero-text h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #37474F;
 }
 
-h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #555;
+.hero-text h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #536DFE; /* Electric Blue as call-to-action for subheadings */
 }
 
-p {
-    margin-bottom: 30px;
-    color: #666;
+.hero-text p {
+  margin-bottom: 1.5rem;
+  color: #37474F;
 }
 
 .buttons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 1rem;
 }
 
 .btn {
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.3s;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.primary {
-    background-color: #333;
-    color: white;
+/* Primary Button */
+.btn.primary {
+  background-color: #536DFE; /* Electric Blue for primary CTA */
+  color: #ECEFF1; /* Silver White text */
+  border-color: #536DFE;
 }
 
-.primary:hover {
-    background-color: #444;
+.btn.primary:hover {
+  background-color: #00E5FF; /* Neon Cyan on hover */
 }
 
-.secondary {
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #ccc;
+/* Secondary Button */
+.btn.secondary {
+  background-color: transparent;
+  color: #536DFE; /* Electric Blue text */
+  border: 2px solid #536DFE;
 }
 
-.secondary:hover {
-    background-color: #f5f5f5;
+.btn.secondary:hover {
+  border-color: #00E5FF; /* Neon Cyan on hover */
+  color: #00E5FF;
 }
 
-.placeholder-image {
-    width: 100%;
-    height: 300px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Hero Image - Ensure image sits next to text */
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero .placeholder-image {
-    max-width: 400px;
-    height: 200px;
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+/* Featured Work Section */
+/* Featured Work Section */
 .featured-work {
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    border-radius: 4px;
-}
-
-.featured-image .placeholder-image {
-    height: 200px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #d2d2d2;
-    padding: 30px 40px;
-}
-
-.footer-content {
+    padding: 2rem;
+    background-color: #ECEFF1; /* Silver White for panel background */
     display: flex;
+    gap: 1.5rem;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    font-size: 1.2rem;
-}
-
-.icon-instagram::before {
-    content: "📷";
-}
-
-.icon-facebook::before {
-    content: "👍";
-}
-
-.icon-twitter::before {
-    content: "🐦";
-}
-
-.copyright {
+    flex-wrap: wrap;
+  }
+  
+  .featured-item {
+    background: #ECEFF1;
+    border: 2px solid #37474F; /* Dark Charcoal for depth */
+    padding: 1rem;
+    flex: 1;
+    min-width: 280px;
     text-align: center;
-    color: #777;
-    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .featured-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .featured-item figure {
+    margin: 0;
+  }
+  
+  .featured-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #536DFE; /* Electric Blue as accent */
+    margin-bottom: 1rem;
+  }
+  
+  .featured-item figcaption h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #37474F;
+  }
+  
+  .featured-item figcaption p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #37474F;
+  }
+  
+  .featured-item figcaption .btn {
+    background-color: #536DFE; /* Electric Blue for CTA */
+    color: #ECEFF1; /* Silver White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s ease;
+  }
+  
+  .featured-item figcaption .btn:hover {
+    background-color: #00E5FF; /* Neon Cyan on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .featured-work {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+/* Footer */
+footer {
+  background-color: #37474F; /* Dark Charcoal for footer background */
+  color: #ECEFF1; /* Silver White for text in footer */
 }
 
-/* Media Queries for Responsiveness */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #536DFE;
+}
+
+.footer-branding .logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+}
+
+.footer-nav ul.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav ul.footer-links li a {
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  color: #ECEFF1;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul.footer-links li a:hover {
+  color: #00E5FF;
+}
+
+.social {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .social-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.1);
+  }
+  
+
+/* Copyright */
+footer .copyright {
+  text-align: center;
+  padding: 0.75rem 0;
+  font-size: 0.9rem;
+  background-color: #37474F;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    nav {
-        margin-top: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .hero {
-        flex-direction: column;
-    }
-    
-    .hero-image {
-        margin-top: 30px;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .hero-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .hero-image, .hero-text {
+    flex: 1 1 100%;
+  }
 }

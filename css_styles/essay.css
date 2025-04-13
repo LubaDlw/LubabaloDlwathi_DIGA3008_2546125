@@ -1,0 +1,72 @@
+/* Essay page styles */
+.essay-wrapper {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .essay-hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #37474F; /* Dark Charcoal */
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #37474F;
+    margin-bottom: 1.5rem;
+  }
+  
+  .essay-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid #37474F;
+    background-color: transparent;
+    color: #37474F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab:hover,
+  .tab.active {
+    background-color: #00E5FF;
+    color: #ECEFF1;
+    border-color: #00E5FF;
+  }
+  
+  .essay-content {
+    background-color: #ECEFF1;
+    padding: 2rem;
+    border: 1px solid #B0BEC5;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .essay-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.75rem;
+    color: #37474F;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .essay-body p {
+    color: #37474F;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  

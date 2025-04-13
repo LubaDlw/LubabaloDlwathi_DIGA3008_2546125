@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Exo+2&family=Roboto+Mono&display=swap');
+
+/* Base styling */
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: #ECEFF1;
+  color: #37474F;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Page Heading */
+main h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #37474F;
+}
+
+main > p {
+  font-size: 1rem;
+  color: #37474F;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* Blog Article Section */
+.blog-article {
+  background-color: #FFFFFF;
+  border: 2px solid #ECEFF1; /* Thickened outer border */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(55, 71, 79, 0.08);
+  text-align: left;
+}
+
+.blog-article h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.75rem;
+  color: #37474F;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.blog-article p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: #37474F;
+}

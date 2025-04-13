@@ -24,15 +24,25 @@ body {
 
 /* Header */
 header {
-  background-color: #ECEFF1; /* Silver White for clean surfaces */
-  border-bottom: 2px solid #37474F;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ECEFF1; /* Silver White for clean surfaces */
+    border-bottom: 2px solid #37474F;
+  }
+  
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+}
+
+main{
+    padding-top: 5.5rem;
 }
 
 .site-title {

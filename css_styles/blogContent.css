@@ -9,6 +9,11 @@ body {
   padding: 0;
 }
 
+img{
+  width: 300px;;
+  height: auto;
+}
+
 .back-to-blog-fixed {
   position: fixed;
   bottom: 20px;

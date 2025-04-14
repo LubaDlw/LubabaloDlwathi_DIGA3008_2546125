@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     background-color: #ECEFF1;
     color: #37474F;
@@ -9,6 +10,7 @@ body {
     margin: auto;
   }
   
+  /* Headings */
   h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
@@ -30,6 +32,7 @@ body {
     color: #00E5FF;
   }
   
+  /* Paragraphs and Lists */
   p, li {
     font-family: 'Exo 2', sans-serif;
     line-height: 1.6;
@@ -41,6 +44,21 @@ body {
     margin-bottom: 1rem;
   }
   
+  /* Additional spacing for section headers and list items */
+  section h3 {
+    margin-top: 1.75rem;
+  }
+  
+  section ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+  }
+  
+  section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Hyperlinks */
   a {
     font-family: 'Roboto Mono', monospace;
     color: #536DFE;
@@ -52,11 +70,10 @@ body {
     text-decoration: underline;
   }
   
-  /* Wireframe Images */
-  /* Wireframe Images */
-.wireframes {
+  /* Wireframe Images Section */
+  .wireframes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased from 250px to 350px */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
   }
@@ -75,22 +92,16 @@ body {
     border-bottom: 2px solid #536DFE;
   }
   
-  
-  /* Footer */
-  footer {
-    margin-top: 3rem;
-    background-color: #37474F;
-    color: #ECEFF1;
-    padding: 1.5rem 1rem;
-    text-align: center;
+
+
+  article section {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #B0BEC5;
   }
   
-  footer a {
-    color: #ECEFF1;
-    margin: 0 1rem;
-  }
-  
-  footer a:hover {
-    color: #00E5FF;
+  article section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 1rem;
   }
   

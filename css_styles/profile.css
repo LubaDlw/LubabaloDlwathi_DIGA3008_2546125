@@ -12,7 +12,6 @@ body {
     color: #37474F;
   }
   
-  
   a {
     text-decoration: none;
     color: #37474F;
@@ -27,7 +26,6 @@ body {
   /* ========== Hero Section ========== */
   .profile-header {
     display: flex;
-    flex-direction: row; /* Align items horizontally */
     justify-content: space-between;
     align-items: center;
     padding: 4rem 8%;
@@ -35,11 +33,8 @@ body {
     flex-wrap: wrap;
   }
   
-  
-  
   .profile-header .profile-intro {
     max-width: 550px;
-    flex: 1;
   }
   
   .profile-header h1 {
@@ -88,15 +83,13 @@ body {
     background-color: #00E5FF;
     color: white;
   }
+  
   .profile-header img {
-    width: 400px;
-    height: 400px;
-    
-    object-fit: cover;   /* Ensures the image covers the container without distortion */
+    max-width: 350px;
+    width: 100%;
+    border-radius: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
-  
-  
   
   /* ========== Tagline Section ========== */
   .tagline {

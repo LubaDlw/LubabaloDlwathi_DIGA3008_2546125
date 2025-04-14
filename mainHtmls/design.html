@@ -4,23 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lubabalo Dlwathi - Design</title>
+  <!-- External CSS files -->
   <link rel="stylesheet" href="../css_styles/styles.css" />
   <link rel="stylesheet" href="../css_styles/design.css" />
-  <link rel="stylesheet" href="../css_styles/responsive.css">
+  <link rel="stylesheet" href="../css_styles/responsive.css" />
+  <!-- Google Fonts import (if not imported inside your CSS already) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@700&family=Roboto+Mono:wght@400;700&display=swap">
 </head>
 <body>
   <header>
     <div class="container header-container">
-      <h1 class="site-title p-name" >Lubabalo Dlwathi</h1>
-
+      <h1 class="site-title p-name">Lubabalo Dlwathi</h1>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-
-    <!-- Burger icon label 4 responsive-->
-    <label for="nav-toggle" class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <!-- Burger icon for responsive navigation -->
+      <label for="nav-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <nav>
         <ul class="nav-list">
           <li><a href="../index.html">HOME</a></li>
@@ -28,7 +29,7 @@
           <li><a href="../mainHtmls/design.html" class="active">DESIGN</a></li>
           <li><a href="../mainHtmls/blog.html">BLOGS</a></li>
           <li><a href="../mainHtmls/essay.html">ESSAY</a></li>
-          <li><a href="../mainHtmls/profile.html" >PROFILE</a></li>
+          <li><a href="../mainHtmls/profile.html">PROFILE</a></li>
         </ul>
       </nav>
     </div>
@@ -38,9 +39,12 @@
     <section>
       <h1>DESIGN</h1>
       
+      <!-- Overall Website Goals Section -->
       <article>
         <h2 class="p-name">OVERALL WEBSITE GOALS</h2>
-        <p class="p-summary">The primary goal of this portfolio website is to create a professional digital presence that effectively showcases my skills, work, and thought process as a designer and developer. Beyond simply displaying projects, I aim to:</p>
+        <p class="p-summary">
+          The primary goal of this portfolio website is to create a professional digital presence that effectively showcases my skills, work, and thought process as a designer and developer. Beyond simply displaying projects, I aim to:
+        </p>
         <ul>
           <li><strong>Demonstrate Technical Versatility</strong> – Show proficiency across multiple disciplines through both the content featured and the implementation of the site itself</li>
           <li><strong>Communicate Design Thinking</strong> – Reveal the rationale and process behind my work, not just the final outcomes</li>
@@ -48,81 +52,170 @@
           <li><strong>Balance Professionalism with Personality</strong> – Present my work with technical rigor while also conveying my unique perspective and approach</li>
           <li><strong>Prioritize Accessibility</strong> – Ensure the site is navigable and usable for visitors with diverse needs and browsing contexts</li>
         </ul>
-        <p>This website serves as both a showcase of my work and a demonstration of my ability to create user-centered digital experiences that balance functionality with aesthetic appeal.</p>
+        <p>
+          This website serves as both a showcase of my work and a demonstration of my ability to create user-centered digital experiences that balance functionality with aesthetic appeal.
+        </p>
       </article>
 
+      <!-- Wireframes Section as Cards -->
       <article class="wireframes h-entry">
         <h2 class="p-name">WIREFRAMES</h2>
-        <p class="p-summary">These initial wireframes represent the foundational structure for my portfolio site, focusing on creating a clear information hierarchy and intuitive user flow.</p>
-        <figure><img src="../images/Wireframes/1.png" alt="Wireframe main image"></figure>
-        <figure><img src="../images/Wireframes/2.png" alt="Wireframe portfolio"></figure>
-        <figure><img src="../images/Wireframes/3.png" alt="Wireframe profile"></figure>
-        <figure><img src="../images/Wireframes/4.png" alt="Wireframe main design"></figure>
-        <figure><img src="../images/Wireframes/5.png" alt="Wireframe blog"></figure>
-        <figure><img src="../images/Wireframes/6.png" alt="Wireframe main essay"></figure>
-        <figure><img src="../images/Wireframes/7.png" alt="Wireframe main blogcontent"></figure>
+        <p class="p-summary">
+          These initial wireframes represent the foundational structure for my portfolio site, focusing on a clear information hierarchy and intuitive user flow. They are displayed as cards that spread out side by side.
+        </p>
+        <section class="design-cards">
+          <div class="design-card">
+            <img src="../images/Wireframes/1.png" alt="Main Wireframe">
+            <div class="design-card-content">
+              <h4>Main Layout</h4>
+              <p>Overview of the homepage structure with featured sections.</p>
+            </div>
+          </div>
+          <div class="design-card">
+            <img src="../images/Wireframes/2.png" alt="Portfolio Wireframe">
+            <div class="design-card-content">
+              <h4>Portfolio Page</h4>
+              <p>Layout focus on project cards and work samples.</p>
+            </div>
+          </div>
+          <div class="design-card">
+            <img src="../images/Wireframes/3.png" alt="Profile Wireframe">
+            <div class="design-card-content">
+              <h4>Profile Section</h4>
+              <p>Details the structure and hierarchy for user and project information.</p>
+            </div>
+          </div>
+          <div class="design-card">
+            <img src="../images/Wireframes/4.png" alt="Design Wireframe">
+            <div class="design-card-content">
+              <h4>Design Page</h4>
+              <p>Wireframe for showcasing design rationale and process.</p>
+            </div>
+          </div>
+          <div class="design-card">
+            <img src="../images/Wireframes/5.png" alt="Blog Wireframe">
+            <div class="design-card-content">
+              <h4>Blog Section</h4>
+              <p>Layout highlighting articles and multimedia content.</p>
+            </div>
+          </div>
+          <div class="design-card">
+            <img src="../images/Wireframes/6.png" alt="Essay Wireframe">
+            <div class="design-card-content">
+              <h4>Essay Page</h4>
+              <p>Organizes long-form content for clarity and engagement.</p>
+            </div>
+          </div>
+          <div class="design-card">
+            <img src="../images/Wireframes/7.png" alt="Blog Content Wireframe">
+            <div class="design-card-content">
+              <h4>Blog Content</h4>
+              <p>Focused layout for in-depth article presentation.</p>
+            </div>
+          </div>
+        </section>
       </article>
 
-      <article class="h-entry">
+      <!-- Design Rationale Section as a Card -->
+      <article class="section-card">
         <h2 class="p-name">DESIGN RATIONALE</h2>
         <section>
           <h3>Navigation Philosophy</h3>
-          <p>The consistent top navigation bar featuring clearly labeled pages keeps navigation visible at all times, prioritizing user clarity and reducing cognitive load.</p>
+          <p>
+            The consistent top navigation bar featuring clearly labeled pages keeps navigation visible at all times, reducing cognitive load.
+          </p>
         </section>
-
         <section>
           <h3>Grid-Based Layout</h3>
-          <p>Pages are built on a simple, responsive grid, ensuring content structure and alignment stays consistent across devices.</p>
+          <p>
+            The website is built on a responsive grid system ensuring consistent content structure and alignment across devices.
+          </p>
         </section>
-
         <section>
           <h3>Content Hierarchy</h3>
           <ul>
-            <li><strong>Home Page</strong> – Begins with three main images accompanied by buttons that direct visitors to key areas of my portfolio for enhanced navigation and readability.</li>
-            <li><strong>Portfolio Page</strong> – Utilizes card-based layouts to clearly separate content, making details more digestible.</li>
-            <li><strong>Design Page</strong> – Features a reordered wireframe display for visual clarity, setting the stage for further interactive enhancements via JavaScript.</li>
-            <li><strong>Profile Page</strong> – Now employs cards to compartmentalize information effectively, ensuring each piece of content stands on its own.</li>
+            <li><strong>Home Page</strong> – Three main images paired with actionable buttons drive users to key portfolio sections.</li>
+            <li><strong>Portfolio Page</strong> – Card-based layouts clearly separate distinct content areas.</li>
+            <li><strong>Design Page</strong> – Compact card display for wireframes maintains visual balance and clarity.</li>
+            <li><strong>Profile Page</strong> – Cards compartmentalize information for improved readability.</li>
           </ul>
         </section>
-
         <section>
           <h3>White Space Utilization</h3>
           <ol>
-            <li>Improves readability</li>
+            <li>Enhances readability</li>
             <li>Groups related content</li>
-            <li>Conveys a refined aesthetic</li>
-            <li>Reduces user fatigue</li>
+            <li>Provides a refined aesthetic</li>
+            <li>Prevents user fatigue</li>
           </ol>
         </section>
-
         <section>
           <h3>Recent Updates & Future Enhancements</h3>
-          <p>In response to usability testing and design refinement, several updates have been implemented:</p>
-          <ul>
-            <li><strong>Home Page Navigation:</strong> Three strategically placed images with buttons now provide clear pathways to various portfolio sections, simplifying user navigation.</li>
-            <li><strong>Navigation Adjustments:</strong> The removal of the highlight around the profile nav link has minimized visual clutter and reduced confusion.</li>
-            <li><strong>Profile Section Redesign:</strong> Adopting a card-based approach in the profile section effectively separates information, enhancing readability.</li>
-            <li><strong>Wireframe Display Reordering:</strong> The reordering of wireframes in the design section improves visual readability, setting the stage for further interactive enhancements.</li>
-            <li><strong>JavaScript Enhancements:</strong> Planned future updates include dynamic content loading and interactive elements implemented via JavaScript, which will elevate the overall user experience while adhering to a progressive enhancement strategy.</li>
-          </ul>
-          <p>These improvements reflect a continued commitment to optimizing both usability and aesthetics across the site.</p>
+          <p>
+            Continuous usability testing has led to improvements such as clearer navigation paths, streamlined active states, and card-based layout redesigns that pave the way for further interactive enhancements.
+          </p>
         </section>
       </article>
 
-      <article>
+      <!-- Design Inspirations Section as a Card -->
+      <article class="section-card">
         <h2>DESIGN INSPIRATIONS</h2>
         <section>
           <h3>Key Inspirations</h3>
           <ul>
-            <li><a href="https://empathy-path-eleven.webflow.io/" target="_blank"><strong>Empathy Creative Studio</strong></a> – Minimal, code-aesthetic with soft animations</li>
-            <li><a href="https://colin-moy.webflow.io/" target="_blank"><strong>Collin Moy</strong></a> – Well-balanced layout, great use of whitespace</li>
+            <li>
+              <a href="https://empathy-path-eleven.webflow.io/" target="_blank"><strong>Empathy Creative Studio</strong></a>
+              – Minimal with soft animations.
+            </li>
+            <li>
+              <a href="https://colin-moy.webflow.io/" target="_blank"><strong>Collin Moy</strong></a>
+              – Excellent balance between structure and whitespace.
+            </li>
           </ul>
         </section>
         <section>
           <h3>Reference Influences</h3>
-          <p>Inspired by design giants like Apple, and industry leaders who prioritize clarity and spacing for legibility. My layouts are structured around actual content flow rather than rigid templates.</p>
+          <p>
+            Inspired by design giants like Apple and other industry leaders who prioritize clarity, balance, and genuine content flow.
+          </p>
         </section>
       </article>
+      
+      <!-- Style Guide Reflection Section as a Card -->
+      <article class="section-card">
+        <h2>STYLE GUIDE REFLECTION</h2>
+        <section>
+          <h3>Typography: Balancing Readability and Futurism</h3>
+          <p>
+            <strong>Headings with Orbitron:</strong> Provide a bold, futuristic look while maintaining clarity.
+          </p>
+          <p>
+            <strong>Body Text with Exo 2:</strong> Ensures long-form content remains accessible on all devices.
+          </p>
+          <p>
+            <strong>Labels and Buttons with Roboto Mono:</strong> Add a technical edge that enhances interactivity.
+          </p>
+        </section>
+        <section>
+          <h3>Interactive Elements: Enhancing Usability and Navigation</h3>
+          <p>
+            <strong>Buttons and Call-to-Actions (Electric Blue – #536DFE):</strong> Draw attention to key functions.
+          </p>
+          <p>
+            <strong>Hover Effects (Neon Cyan – #00E5FF):</strong> Provide dynamic feedback for user interactions.
+          </p>
+          <p>
+            <strong>Foundation Colors:</strong> A blend of Metallic Grey (#ECEFF1), Silver White, and Dark Charcoal (#37474F) establishes a refined visual base.
+          </p>
+        </section>
+        <section>
+          <h3>Integrating Design Principles in Layout</h3>
+          <p>
+            A fixed top navigation and responsive grid layout ensure content remains accessible, balanced, and visually pleasing on every device.
+          </p>
+        </section>
+      </article>
+      
     </section>
   </main>
 

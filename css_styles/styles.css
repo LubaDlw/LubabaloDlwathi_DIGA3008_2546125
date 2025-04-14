@@ -11,8 +11,8 @@
 body {
   font-family: 'Exo 2', sans-serif;
   line-height: 1.6;
-  background-color: #B0BEC5; /* Metallic Grey for backgrounds and panels */
-  color: #37474F; /* Dark Charcoal for text contrast */
+  background-color: #ECEFF1; /* Metallic Grey for backgrounds and panels */
+  color: #37474F; 
 }
 
 .container {
@@ -41,7 +41,7 @@ header {
   padding: 1rem 0;
 }
 
-main, .portfolio-content, .essay-wrapper {
+main, .portfolio-content {
     padding-top: 5.5rem;
 }
 

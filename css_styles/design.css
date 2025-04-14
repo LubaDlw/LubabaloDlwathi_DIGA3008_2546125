@@ -139,7 +139,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centers the content horizontally */
-    gap: 20px; /* Adds space between the wireframes */
+    gap: 20px; /* Add more between the wireframes */
     margin-top: 20px;
   }
   
@@ -148,12 +148,12 @@ body {
     max-width: 500px; 
     box-sizing: border-box; 
   }
- 
-  .imgStyle{
-max-width: 20;
+
+  /* Resize image so that it does not overlap */ 
+  .image{
+    width: 550px;
+    height: 550px;
   }
-
-
 
   article section {
     margin-top: 1rem;

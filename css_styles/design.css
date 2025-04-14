@@ -144,9 +144,9 @@ body {
   }
   
   .design-card {
-    width: 45%; /* Makes each wireframe take up 45% of the available space */
-    max-width: 500px; /* Limits the width of each wireframe */
-    box-sizing: border-box; /* Ensures padding and border don't affect width */
+    width: 45%; 
+    max-width: 500px; 
+    box-sizing: border-box; 
   }
   
 
@@ -161,4 +161,27 @@ body {
     border-bottom: none;
     margin-bottom: 1rem;
   }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #536DFE; /* Electric Blue */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .back-to-top:hover {
+    background-color: #00E5FF; /* Neon Cyan */
+    color: #37474F; /* Dark Charcoal for contrast */
+  }
+  
   

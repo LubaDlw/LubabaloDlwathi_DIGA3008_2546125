@@ -11,7 +11,7 @@
   <!-- Google Fonts import (if not imported inside your CSS already) -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@700&family=Roboto+Mono:wght@400;700&display=swap">
 </head>
-<body>
+<body id="top">
   <header>
     <div class="container header-container">
       <h1 class="site-title p-name">Lubabalo Dlwathi</h1>
@@ -36,12 +36,43 @@
   </header>
 
   <main>
+
     <section>
-      <h1>DESIGN</h1>
+        <h1>DESIGN OVERVIEW</h1>
+        <ul class="design-links">
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#IxD">Interaction Design Process</a></li>
+          <li><a href="#website-goals">Overall Website Goals</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+          <li><a href="#design-rationale">Design Rationale</a></li>
+          <li><a href="#style-guide">Style Guide Reflection</a></li>
+          <li><a href="#ui-ux">UI, UX & Navigation</a></li>
+          <li><a href="#accessibility">Accessibility Considerations</a></li>
+        </ul>
+      </section>
+    <section>
+     
       
       <!-- Overall Website Goals Section -->
+
+      <!-- Introduction -->
       <article>
-        <h2 class="p-name">OVERALL WEBSITE GOALS</h2>
+        <h2 id = "intro">INTRODUCTION</h2>
+        <p>This section provides detailed documentation of my Interaction Design (IxD) process, aesthetic choices, and accessibility considerations, structured around key principles of usability, clarity, and effective communication. Each decision is intentional and supports both functional and experiential goals.</p>
+      </article>
+
+      <!-- IxD PROCESS -->
+      <article class="section-card">
+        <h2 id = "IxD">INTERACTION DESIGN PROCESS</h2>
+        <p>My IxD process began with identifying user goals and needs by defining personas and journey maps. Early testing of navigation paths and wireframes informed layout decisions. Continuous feedback loops shaped how features evolved to better meet real-world use cases.</p>
+        <ul>
+          <li>Persona-driven decision-making</li>
+          <li>Wireframe iteration based on usability heuristics</li>
+          <li>Testing for accessibility and flow</li>
+        </ul>
+      </article>
+      <article>
+        <h2 id = "website-goals" class="p-name">OVERALL WEBSITE GOALS</h2>
         <p class="p-summary">
           The primary goal of this portfolio website is to create a professional digital presence that effectively showcases my skills, work, and thought process as a designer and developer. Beyond simply displaying projects, I aim to:
         </p>
@@ -59,7 +90,7 @@
 
       <!-- Wireframes Section as Cards -->
       <article class="wireframes h-entry">
-        <h2 class="p-name">WIREFRAMES</h2>
+        <h2 id = "wireframes" class="p-name">WIREFRAMES</h2>
         <p class="p-summary">
           These initial wireframes represent the foundational structure for my portfolio site, focusing on a clear information hierarchy and intuitive user flow. They are displayed as cards that spread out side by side.
         </p>
@@ -118,7 +149,7 @@
 
       <!-- Design Rationale Section as a Card -->
       <article class="section-card">
-        <h2 class="p-name">DESIGN RATIONALE</h2>
+        <h2 id="design-rationale" class="p-name">DESIGN RATIONALE</h2>
         <section>
           <h3>Navigation Philosophy</h3>
           <p>
@@ -183,7 +214,7 @@
       
       <!-- Style Guide Reflection Section as a Card -->
       <article class="section-card">
-        <h2>STYLE GUIDE REFLECTION</h2>
+        <h2 id="style-guide">STYLE GUIDE REFLECTION</h2>
         <section>
           <h3>Typography: Balancing Readability and Futurism</h3>
           <p>
@@ -217,6 +248,48 @@
       </article>
       
     </section>
+
+    <!-- UI & UX + Navigation + Hierarchy + Clarity -->
+    <article class="section-card">
+        <h2 id="ui-ux">UI, UX, & USER NAVIGATION</h2>
+        <section>
+          <h3>User Interface (UI)</h3>
+          <p>All UI elements—from buttons to navigation bars—follow a consistent visual language. Call-to-action buttons use a vibrant electric blue, while inactive elements are subtle but still recognizable.</p>
+        </section>
+        <section>
+          <h3>User Experience (UX)</h3>
+          <p>Clear navigational structure with visual breadcrumbs and active link highlighting communicates where users are. Interactive feedback like hover states and transitions reduce friction and enhance flow.</p>
+        </section>
+        <section>
+          <h3>Navigation & User Control</h3>
+          <p>Navigation is available at all times, supporting control and orientation. Users can access any section directly and always understand their current location within the site’s structure.</p>
+        </section>
+        <section>
+          <h3>Clarity and Familiarity</h3>
+          <p>Design conventions are intentionally familiar (top nav bar, scrollable cards, hover interactions) to align with user expectations. Layouts follow a predictable, structured format for clarity and comfort.</p>
+        </section>
+        <section>
+          <h3>Information Hierarchy</h3>
+          <p>Hierarchical clarity is achieved through color contrast, font weight, and spacing. Larger, bolder headings draw attention, while cards, sections, and negative space establish flow and emphasis.</p>
+        </section>
+      </article>
+
+      <!-- Accessibility Considerations -->
+      <article class="section-card">
+        <h2 id="accessibility">ACCESSIBILITY CONSIDERATIONS</h2>
+        <section>
+          <ul>
+            <li><strong>Semantic HTML:</strong> All sections use semantic elements like &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, improving screen reader navigation.</li>
+            <li><strong>Alt Text:</strong> All wireframe and portfolio images include alt attributes describing visual content.</li>
+            <li><strong>Color Contrast:</strong> High contrast between text and background ensures readability for users with visual impairments.</li>
+            <li><strong>Responsive Layout:</strong> Design adapts across mobile, tablet, and desktop, ensuring usability in various contexts.</li>
+            <li><strong>Logical Structure:</strong> Content is grouped logically and heading structure follows an H1 > H2 > H3 pattern.</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+
   </main>
 
   <footer>

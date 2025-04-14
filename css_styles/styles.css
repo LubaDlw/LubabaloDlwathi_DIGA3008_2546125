@@ -15,9 +15,11 @@ body {
   color: #37474F; 
 }
 
-.active{
-    color: #536DFE;
+.nav-list li a.active {
+    color: #00E5FF;  /* Neon Cyan for active state */
+    font-weight: bold;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;

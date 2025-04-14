@@ -148,7 +148,11 @@ body {
     max-width: 500px; 
     box-sizing: border-box; 
   }
-  
+ 
+  .imgStyle{
+max-width: 20;
+  }
+
 
 
   article section {

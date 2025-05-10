@@ -160,3 +160,27 @@ article button:hover {
 .project-item {
   animation: fadeIn 0.5s ease forwards;
 }
+
+/* Always show description on mobile */
+@media screen and (max-width: 768px) {
+  .project-item .description-port {
+    display: block;
+    opacity: 1;
+  }
+
+  .project-item:hover .description-port {
+    display: block;
+  }
+}
+
+/* Hide description by default on desktop */
+.project-item .description-port {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show description on hover (desktop) */
+.project-item:hover .description-port {
+  display: block;
+  opacity: 1;
+}

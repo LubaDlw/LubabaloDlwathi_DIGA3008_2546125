@@ -31,6 +31,7 @@ main > p {
 
 .category-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
   margin: 3rem 0;
@@ -93,7 +94,7 @@ article h3 {
 
 article img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   margin: 1rem 0;
   background-color: #CFD8DC;
@@ -185,10 +186,7 @@ article button:hover {
   opacity: 1;
 }
 
-
 /* Gallery */
-
-
 
 /* Gallery-specific styles */
 #gallery .project-item {
@@ -214,7 +212,6 @@ article button:hover {
   object-fit: fill;
 }
 
-
 #gallery .project-item:hover img {
   transform: scale(1.05);
 }
@@ -236,7 +233,7 @@ article button:hover {
   line-height: 1.4;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for filter buttons */
 @media screen and (max-width: 768px) {
   .project-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -245,5 +242,22 @@ article button:hover {
   
   #gallery .project-item img {
     max-height: 180px;
+  }
+  
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Additional responsive adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+  .category-nav {
+    gap: 0.5rem;
+  }
+  
+  .filter-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
   }
 }

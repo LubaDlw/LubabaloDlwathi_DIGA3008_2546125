@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         description: "Work for an event hosted by IBM and WitsDevSoc" 
       },
       { 
-        src: "../images/DesignGallery/design2.webp", 
+        src: "../images/DesignGallery/WebsitePoster.jpg", 
         alt: "Design 2", 
         title: "Mobile App UI", 
         description: "Fitness tracking app interface with custom metrics visualization." 

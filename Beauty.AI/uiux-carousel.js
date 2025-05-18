@@ -1,42 +1,40 @@
-// uiux-carousel.js
+// uiux-carousel.js 
+//Display Video
 
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
+    
+    // Hide navigation since 1
     const prevButton = document.querySelector('.prev-btn');
     const nextButton = document.querySelector('.next-btn');
-    const totalSlides = 47; // FoodieGem Project
-    let currentIndex = 0;
-  
-    // Populate slides
-    for (let i = 49; i <= 61; i++) {
-      const li = document.createElement('li');
-      const img = document.createElement('img');
-     // img.src = `../images/FoodieGem/Screenshot (${i}).png`;
-      img.src = ` ./MG_Images/Screenshot (${i}).png `
-      img.alt = `FoodieGem Presentation ${i}`;
-      li.appendChild(img);
-      track.appendChild(li);
-    }
-  
-    const slides = Array.from(track.children);
-  
-    function updateSlidePosition() {
-      const slideWidth = slides[0].getBoundingClientRect().width;
-      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    }
-  
-    window.addEventListener('resize', updateSlidePosition);
-  
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-      updateSlidePosition();
-    });
-  
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-      updateSlidePosition();
-    });
-  
-    // Initial position
-    updateSlidePosition();
-  });
+    if (prevButton) prevButton.style.display = 'none';
+    if (nextButton) nextButton.style.display = 'none';
+    
+    // Clear any existing content in the track
+    track.innerHTML = '';
+    
+    // Create container for the video
+    const li = document.createElement('li');
+    li.style.width = '100%';
+    
+    // Create the video element
+    const video = document.createElement('video');
+    
+    // Set video attributes
+    // Update this path to your actual video file location
+    video.src = './BeautyAIDocs/Jozi Creatives, Loreal Brandstrom 2024.mp4'; // Change this to your actual video file
+    video.controls = true; // Add video controls (play, pause, etc.)
+    video.preload = 'auto'; // Preload the video for smoother playback
+    video.style.width = '100%';
+    video.style.maxHeight = '85vh'; // Limit height to avoid overflowing viewport
+    
+    // Optional: you can add more attributes as needed
+    // video.poster = './path-to-poster-image.jpg'; // Thumbnail before video plays
+    // video.autoplay = true; // Uncomment to autoplay (may be blocked by browsers)
+    // video.muted = true; // Required for autoplay in most browsers
+    // video.loop = true; // Uncomment to loop the video
+    
+    // Append video to the carousel
+    li.appendChild(video);
+    track.appendChild(li);
+});

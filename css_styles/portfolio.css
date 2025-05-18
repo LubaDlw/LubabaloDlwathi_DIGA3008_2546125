@@ -184,3 +184,64 @@ article button:hover {
   display: block;
   opacity: 1;
 }
+
+
+/* Gallery */
+
+
+
+/* Gallery-specific styles */
+#gallery .project-item {
+  background-color: #ECEFF1;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#gallery .project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .project-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+#gallery .project-item:hover img {
+  transform: scale(1.05);
+}
+
+#gallery .project-item h3 {
+  font-family: 'Orbitron', sans-serif;
+  padding: 1rem 1rem 0.5rem;
+  margin: 0;
+  color: #37474F;
+}
+
+#gallery .project-item .description-port {
+  font-family: 'Exo 2', sans-serif;
+  padding: 0 1rem 1rem;
+  margin: 0;
+  color: #546E7A;
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  #gallery .project-item img {
+    height: 180px;
+  }
+}

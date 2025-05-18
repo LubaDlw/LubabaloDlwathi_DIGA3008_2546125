@@ -14,36 +14,41 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const galleryImages = [
       { 
-        src: "../images/gallery/design1.jpg", 
+        src: "../images/DesignGallery/design1.jpg", 
         alt: "Design 1", 
-        title: "Website Mockup", 
-        description: "Modern e-commerce website interface design with focus on user experience." 
+        title: "WitsDevSoc Poster", 
+        description: "Work for an event hosted by IBM and WitsDevSoc" 
       },
       { 
-        src: "../images/gallery/design2.jpg", 
+        src: "../images/DesignGallery/design2.webp", 
         alt: "Design 2", 
         title: "Mobile App UI", 
         description: "Fitness tracking app interface with custom metrics visualization." 
       },
       { 
-        src: "../images/gallery/design3.jpg", 
+        src: "../images/DesignGallery/design3.webp", 
         alt: "Design 3", 
         title: "Poster Design", 
         description: "Event promotion poster with typography-focused aesthetic." 
       },
       { 
-        src: "../images/gallery/design4.jpg", 
+        src: "../images/DesignGallery/design4.webp", 
         alt: "Design 4", 
         title: "Logo Concept", 
         description: "Minimalist logo design for a tech startup." 
       },
       { 
-        src: "../images/gallery/design5.jpg", 
+        src: "../images/DesignGallery/design5.png", 
+        alt: "Design 5", 
+        title: "Social Media Kit", 
+        description: "Consistent branding elements for cross-platform social media presence." 
+      },
+      { 
+        src: "../images/DesignGallery/design6.webp", 
         alt: "Design 5", 
         title: "Social Media Kit", 
         description: "Consistent branding elements for cross-platform social media presence." 
       }
-      // Add more images as needed
     ];
     
     // Clear existing content

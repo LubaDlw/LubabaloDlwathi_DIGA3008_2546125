@@ -1,7 +1,7 @@
 // footer-script.js - This script adds the footer to every page
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Create the footer element if it doesn't exist
+  // Create the footer element 
   if (!document.querySelector('footer')) {
     // Create footer HTML content
     const footerHTML = `

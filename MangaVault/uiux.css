@@ -11,7 +11,10 @@ body {
     margin: 0 auto;
     padding: 1rem;
   }
-  
+  header {
+  margin-bottom: 1.5rem;
+}
+
  
   
   .back-btn {
@@ -77,3 +80,55 @@ body {
   .carousel-btn:hover {
     color: #536DFE;
   }
+  
+  .carousel-description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.carousel-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #37474F;
+}
+
+.carousel-description p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .carousel-description h2 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-description p {
+    font-size: 0.95rem;
+  }
+
+  .back-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    
+  }
+}

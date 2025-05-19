@@ -1,4 +1,4 @@
-// First, let's update your existing JavaScript to handle the gallery filter
+
 document.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projectItems = document.querySelectorAll('.project-item');
@@ -8,46 +8,42 @@ document.addEventListener('DOMContentLoaded', function () {
   function loadGalleryImages() {
     const galleryContainer = document.querySelector('#gallery .project-grid');
     
-    // This is where we'd normally fetch images from a directory
-    // Since direct folder reading isn't possible with client-side JS,
-    // we'll use a predefined array of images
-    
     const galleryImages = [
       { 
         src: "../images/DesignGallery/design1.jpg", 
         alt: "Design 1", 
-        title: "WitsDevSoc Poster", 
-        description: "Work for an event hosted by IBM and WitsDevSoc" 
+        title: "IBM SKillsBuild", 
+        description: "Work for a workshop hosted by IBM and WitsDevSoc" 
       },
       { 
         src: "../images/DesignGallery/WebsitePoster.jpg", 
         alt: "Design 2", 
-        title: "Mobile App UI", 
-        description: "Fitness tracking app interface with custom metrics visualization." 
+        title: "Web Poster", 
+        description: "Poster announcing release for Wits DevSoc Poster" 
       },
       { 
         src: "../images/DesignGallery/design3.webp", 
         alt: "Design 3", 
         title: "Poster Design", 
-        description: "Event promotion poster with typography-focused aesthetic." 
+        description: "Youth Day Poster In Collaboration With Vow FM." 
       },
       { 
         src: "../images/DesignGallery/design4.webp", 
         alt: "Design 4", 
-        title: "Logo Concept", 
-        description: "Minimalist logo design for a tech startup." 
+        title: "Transnet Design Brief", 
+        description: "Concept Work for Transnet Design Brief" 
       },
       { 
         src: "../images/DesignGallery/design5.png", 
         alt: "Design 5", 
-        title: "Social Media Kit", 
-        description: "Consistent branding elements for cross-platform social media presence." 
+        title: "Concept Work for Kids Essential", 
+        description: "Product Showcase of Green Science Weather Kit" 
       },
       { 
         src: "../images/DesignGallery/design6.webp", 
         alt: "Design 5", 
-        title: "Social Media Kit", 
-        description: "Consistent branding elements for cross-platform social media presence." 
+        title: "Youth Day Poste", 
+        description: "Poster in collaboration with VOW FM" 
       }
     ];
     

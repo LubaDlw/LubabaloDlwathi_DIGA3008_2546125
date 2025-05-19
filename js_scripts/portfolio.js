@@ -122,3 +122,90 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// portfolio.js - Updated with Read More functionality
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Filter functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-item');
+  
+  // Add click event to filter buttons
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Get filter value
+      const filterValue = button.getAttribute('data-filter');
+      
+      // Filter projects
+      projectItems.forEach(item => {
+        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+  
+  // Create and add "Read More" buttons to each project item
+  const addReadMoreButtons = () => {
+    projectItems.forEach(item => {
+      // Check if the item already has a read more button
+      if (!item.querySelector('.read-more-btn')) {
+        const description = item.querySelector('.description-port');
+        if (description) {
+          // Create button
+          const readMoreBtn = document.createElement('button');
+          readMoreBtn.className = 'read-more-btn';
+          readMoreBtn.textContent = 'Read More';
+          
+          // Insert button before the project link
+          const projectLink = item.querySelector('a');
+          if (projectLink) {
+            item.insertBefore(readMoreBtn, projectLink);
+          } else {
+            item.appendChild(readMoreBtn);
+          }
+          
+          // Add click event to toggle description
+          readMoreBtn.addEventListener('click', function() {
+            description.classList.toggle('description-expanded');
+            this.textContent = description.classList.contains('description-expanded') ? 'Read Less' : 'Read More';
+          });
+        }
+      }
+    });
+  };
+  
+  // Call function to add read more buttons
+  addReadMoreButtons();
+  
+  // Toggle read more buttons visibility based on screen size
+  const handleResponsiveLayout = () => {
+    const isMobile = window.innerWidth <= 768;
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    
+    readMoreBtns.forEach(btn => {
+      // On desktop - hide buttons and reset descriptions
+      if (!isMobile) {
+        btn.style.display = 'none';
+        const description = btn.parentElement.querySelector('.description-port');
+        if (description) {
+          description.classList.remove('description-expanded');
+        }
+      } else {
+        btn.style.display = 'inline-block';
+      }
+    });
+  };
+  
+  // Call on page load and resize
+  handleResponsiveLayout();
+  window.addEventListener('resize', handleResponsiveLayout);
+});

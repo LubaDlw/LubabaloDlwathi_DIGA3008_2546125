@@ -1,191 +1,244 @@
-/* Base Styles */
-body {
-    background-color: #ECEFF1;
-    color: #37474F;
-  }
+/* Design page filtered styles */
+.design-wrapper {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Exo 2', sans-serif;
+  padding-top: 5.5rem;
+}
 
-  
-  
-  /* Individual card for wireframes */
-  .design-card {
-    background-color: #ECEFF1;
-    border: 2px solid #37474F;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.design-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #37474F;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #37474F;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.design-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  border: 2px solid #37474F;
+  background-color: transparent;
+  color: #37474F;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.tab:hover,
+.tab.active {
+  background-color: #00E5FF;
+  color: #ECEFF1;
+  border-color: #00E5FF;
+}
+
+.design-content {
+  display: none;
+  background-color: #ECEFF1;
+  padding: 2rem;
+  border: 1px solid #B0BEC5;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.design-content.active {
+  display: block;
+}
+
+.design-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.75rem;
+  color: #37474F;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.design-body h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: #37474F;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00E5FF;
+  padding-bottom: 0.5rem;
+}
+
+.design-body p {
+  color: #37474F;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.design-body ul {
+  margin-bottom: 1.5rem;
+}
+
+.design-body li {
+  color: #37474F;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.design-body li strong {
+  color: #00E5FF;
+}
+
+/* Wireframes specific styles */
+.wireframes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.wireframe-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.wireframe-card:hover {
+  transform: translateY(-4px);
+}
+
+.wireframe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.wireframe-content {
+  padding: 1.5rem;
+}
+
+.wireframe-content h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: #37474F;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.wireframe-content p {
+  color: #37474F;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Style guide specific styles */
+.style-guide-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.full-width-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.typography-section {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid #00E5FF;
+}
+
+/* User flow diagram styles */
+.user-flow-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.flow-diagram {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .design-wrapper {
+    padding: 2rem 0.5rem;
+    padding-top: 5rem;
   }
   
-  
-  
-  .design-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 2px solid #536DFE;
+  .design-tabs {
+    gap: 0.25rem;
   }
   
-  .design-card-content {
+  .tab {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .design-content {
+    padding: 1.5rem;
+  }
+  
+  .design-title {
+    font-size: 1.5rem;
+  }
+  
+  .design-body h3 {
+    font-size: 1.2rem;
+  }
+  
+  .wireframes-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .typography-section {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .design-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab {
+    width: 200px;
     text-align: center;
   }
-  
-  .design-card-content h4 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.25rem;
-    color: #37474F;
-    margin-bottom: 0.5rem;
-  }
-  
-  .design-card-content p {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 0.95rem;
-    color: #37474F;
-  }
-  
-  /* Section cards for longer text areas */
-  .section-card {
-    background-color: #ECEFF1;
-    border: 2px solid #37474F;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .section-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 3px 10px rgba(55, 71, 79, 0.15);
-  }
-  
-  .section-card h2, 
-  .section-card h3 {
-    margin-bottom: 0.5rem;
-    color: #536DFE;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  
-  main {
-    padding: 6rem 1rem 3rem;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  /* Headings */
-  h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #536DFE;
-  }
-  
-  h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.4rem;
-    margin-top: 1.5rem;
-    color: #00E5FF;
-  }
-  
-  /* Paragraphs and Lists */
-  p, li {
-    font-family: 'Exo 2', sans-serif;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-  }
-  
-  ul, ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Additional spacing for section headers and list items */
-  section h3 {
-    margin-top: 1.75rem;
-  }
-
-  
-  
-  section ul {
-    margin-left: 2rem;
-    list-style-type: disc;
-  }
-  
-  section ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Hyperlinks */
-  a {
-    font-family: 'Roboto Mono', monospace;
-    color: #536DFE;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #00E5FF;
-    text-decoration: underline;
-  }
-  
-
-
-  .design-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the content horizontally */
-    gap: 20px; /* Add more between the wireframes */
-    margin-top: 20px;
-  }
-  
-  .design-card {
-    width: 45%; 
-    max-width: 500px; 
-    box-sizing: border-box; 
-  }
-
-  /* Resize image so that it does not overlap */ 
-  .image{
-    width: 300px;
-    height: 300px;
-  }
-
-  article section {
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #B0BEC5;
-  }
-  
-  article section:last-of-type {
-    border-bottom: none;
-    margin-bottom: 1rem;
-  }
-
-  .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #536DFE; /* Electric Blue */
-    color: white;
-    padding: 10px 16px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 14px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-  }
-  
-  .back-to-top:hover {
-    background-color: #00E5FF; /* Neon Cyan */
-    color: #37474F; /* Dark Charcoal for contrast */
-  }
-  
-  
+}

@@ -127,7 +127,7 @@ nav ul.nav-list li a:hover {
 
 /* Primary Button */
 .btn.primary {
-  background-color: #536DFE; /* Electric Blue for primary CTA */
+  background-color: #00E5FF; /* Electric Blue for primary CTA */
   color: #ECEFF1; /* Silver White text */
   border-color: #536DFE;
 }
@@ -214,7 +214,7 @@ nav ul.nav-list li a:hover {
   }
   
   .featured-item figcaption .btn {
-    background-color: #536DFE; /* Electric Blue for CTA */
+    background-color: #00E5FF; /* Electric Blue for CTA */
     color: #ECEFF1; /* Silver White text */
     border: none;
     padding: 0.5rem 1rem;

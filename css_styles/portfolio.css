@@ -41,7 +41,7 @@ main > p {
 .category-nav a button {
   font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
-  background-color: #536DFE;
+  background-color: #00E5FF;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -109,7 +109,7 @@ article ul {
 
 article button {
   font-family: 'Roboto Mono', monospace;
-  background-color: #536DFE;
+  background-color: #00E5FF;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -128,7 +128,7 @@ article button:hover {
   font-size: 1rem;
   background-color: transparent;
   color: #37474F;
-  border: 2px solid #536DFE;
+  border: 2px solid #00E5FF;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
   border-radius: 2px;
@@ -137,7 +137,7 @@ article button:hover {
 }
 
 .filter-btn:hover, .filter-btn.active {
-  background-color: #536DFE;
+  background-color: #00E5FF;
   color: white;
   transform: translateY(-2px);
 }

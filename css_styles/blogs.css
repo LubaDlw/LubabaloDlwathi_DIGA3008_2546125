@@ -1,90 +1,185 @@
-/* blog.css - Custom styles for the Blogs page only */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Exo+2&family=Roboto+Mono&display=swap');
+/* Blog page filtered styles - adapted from design.css */
+        .blog-wrapper {
+            padding: 3rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-family: 'Exo 2', sans-serif;
+            padding-top: 5.5rem;
+        }
 
-body {
-  font-family: 'Exo 2', sans-serif;
-  background-color: #ECEFF1;
-  color: #37474F;
-  margin: 0;
-  padding: 0;
-}
+        .blog-hero {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
 
-main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  padding-top: 5.5rem;
-}
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: #37474F;
+            margin-bottom: 1rem;
+        }
 
-main h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  color: #37474F;
-  margin-bottom: 1rem;
-}
+        .subtitle {
+            font-size: 1rem;
+            color: #37474F;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-main > p {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  font-size: 1rem;
-  color: #37474F;
-}
+        .blog-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+            padding: 1rem 0;
+        }
 
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* wider min width */
-    gap: 2.5rem; /* slightly increased */
-    margin-top: 2rem;
-  }
-  
+        .tab {
+            padding: 0.75rem 2rem;
+            font-family: 'Roboto Mono', monospace;
+            border: 2px solid #37474F;
+            background-color: transparent;
+            color: #37474F;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
 
-.blog-card {
-  background-color: #FFFFFF;
-  border: 1px solid #B0BEC5;
-  border-radius: 12px;
-  padding: 4rem; /* Increased from 1.5rem */
-  text-align: left;
- 
-  box-shadow: 0 6px 12px rgba(55, 71, 79, 0.1); /* Slightly deeper shadow */
-  transition: transform 0.3s ease;
-}
+        .tab:hover,
+        .tab.active {
+            background-color: #00E5FF;
+            color: #ECEFF1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+        }
 
+        .blog-content {
+            display: none;
+            background-color: #ECEFF1;
+            padding: 2rem;
+            border: 1px solid #B0BEC5;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
 
-.blog-card:hover {
-  transform: translateY(-5px);
-  border-color: #00E5FF;
-}
+        .blog-content.active {
+            display: block;
+        }
 
-.blog-card h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.1rem;
-  color: #37474F;
-  margin-bottom: 1rem;
-}
+        .blog-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.75rem;
+            color: #37474F;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
 
-.blog-card ul {
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-}
+        .blog-body h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            color: #37474F;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #00E5FF;
+            padding-bottom: 0.5rem;
+        }
 
-.blog-card ul li {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-}
+        .blog-body p {
+            color: #37474F;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
 
-.blog-card button {
-  font-family: 'Roboto Mono', monospace;
-  background-color: #00E5FF;
-  color: #FFFFFF;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+        .blog-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
 
-.blog-card button:hover {
-  background-color: #00E5FF;
-  color: #37474F;
-}
+        .blog-body li {
+            color: #37474F;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-body strong {
+            color: #00E5FF;
+        }
+
+        .blog-body em {
+            color: #37474F;
+            font-style: italic;
+        }
+
+        .blog-body a {
+            color: #00E5FF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-body a:hover {
+            color: #37474F;
+            text-decoration: underline;
+        }
+
+        .blog-date {
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+            color: #B0BEC5;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .blog-wrapper {
+                padding: 2rem 0.5rem;
+                padding-top: 5rem;
+            }
+            
+            .blog-tabs {
+                gap: 0.25rem;
+            }
+            
+            .tab {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+            
+            .blog-content {
+                padding: 1.5rem;
+            }
+            
+            .blog-title {
+                font-size: 1.5rem;
+            }
+            
+            .blog-body h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .blog-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab {
+                width: 200px;
+                text-align: center;
+            }
+        }

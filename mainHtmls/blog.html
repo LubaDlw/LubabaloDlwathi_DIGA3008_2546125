@@ -10,94 +10,182 @@
     <link rel="stylesheet" href="../css_styles/styles.css">
     <link rel="stylesheet" href="../css_styles/blogs.css">
     <link rel="stylesheet" href="../css_styles/responsive.css">
+    <!-- Google Fonts import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@700&family=Roboto+Mono:wght@400;700&display=swap">
+   
 </head>
 <body class="h-card">
-  <header>
-    <div class="container header-container">
-      <h1 class="site-title p-name">Lubabalo Dlwathi</h1>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <header>
+        <div class="container header-container">
+            <h1 class="site-title p-name">Lubabalo Dlwathi</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <!-- Burger icon label 4 responsive-->
+            <label for="nav-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../mainHtmls/portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="../mainHtmls/design.html">DESIGN</a></li>
+                    <li><a href="../mainHtmls/blog.html" class="active u-url" rel="me">BLOGS</a></li>
+                    <li><a href="../mainHtmls/essay.html">ESSAY</a></li>
+                    <li><a href="../mainHtmls/profile.html" class="profile-button">PROFILE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Burger icon label 4 responsive-->
-    <label for="nav-toggle" class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../mainHtmls/portfolio.html">PORTFOLIO</a></li>
-          <li><a href="../mainHtmls/design.html">DESIGN</a></li>
-          <li><a href="../mainHtmls/blog.html" class="active u-url" rel="me">BLOGS</a></li>
-          <li><a href="../mainHtmls/essay.html">ESSAY</a></li>
-          <li><a href="../mainHtmls/profile.html" class="profile-button">PROFILE</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main class="blog-wrapper h-feed">
+        <section class="blog-hero">
+            <h1 class="section-title">BLOG SECTION</h1>
+            <p class="subtitle p-summary">Insights, experiments, and reflections from my journey as a developer and designer.</p>
+            
+            <div class="blog-tabs">
+                <button class="tab active" data-section="week1">WEEK 1</button>
+                <button class="tab" data-section="week2">WEEK 2</button>
+                <button class="tab" data-section="week3">WEEK 3</button>
+                <button class="tab" data-section="week4">WEEK 4</button>
+                <button class="tab" data-section="week7">WEEK 7</button>
+                <button class="tab" data-section="reflections">REFLECTIONS</button>
+            </div>
+        </section>
 
-  <main>
-    <h1>Blogs</h1>
-    <p class="p-summary">Insights, experiments, and reflections from my journey as a developer and designer.</p>
-  
-    <div class="blog-grid h-feed">
-      <div class="blog-card h-entry">
-        <h3 class="p-name">WEEK 1 BLOG</h3>
-        <ul class="p-summary">
-          <li>GitHub Pages setup, Turing's paper, web history.</li>
-        </ul>
-        <a href="../Blogs/week1.html" class="u-url"><button>READ MORE</button></a>
-        <time class="dt-published" datetime="2025-02-17">Feb 17, 2025</time>
-      </div>
-  
-      <div class="blog-card h-entry">
-        <h3 class="p-name">WEEK 2 BLOG</h3>
-        <ul class="p-summary">
-          <li>Website development reflections</li>
-          
-        </ul>
-        <a href="../Blogs/week2.html" class="u-url"><button>READ MORE</button></a>
-        <time class="dt-published" datetime="2025-02-24">Feb 24, 2025</time>
-      </div>
-  
-      <div class="blog-card h-entry">
-        <h3 class="p-name">WEEK 3 BLOG</h3>
-        <ul class="p-summary">
-          <li>Structure, content, and user experience.</li>
-        </ul>
-        <a href="../Blogs/week3.html" class="u-url"><button>READ MORE</button></a>
-        <time class="dt-published" datetime="2025-03-03">Mar 3, 2025</time>
-      </div>
-  
-      <div class="blog-card h-entry">
-        <h3 class="p-name">WEEK 4 BLOG</h3>
-        <ul class="p-summary">
-          <li>HTML development, interaction design, content structure, and future improvements.</li>
-        </ul>
-        <a href="../Blogs/week4.html" class="u-url"><button>READ MORE</button></a>
-        <time class="dt-published" datetime="2025-03-10">Mar 10, 2025</time>
-      </div>
+        <!-- Week 1 Blog -->
+        <article class="blog-content h-entry active" data-content="week1">
+            <h2 class="blog-title p-name">WEEK 1 BLOG</h2>
+            <div class="blog-date dt-published">February 17, 2025</div>
+            <div class="blog-body e-content">
+                <p>Exploring GitHub Pages, analyzing Turing's groundbreaking 1950 paper, and examining hypertext theory in relation to our modern digital landscape.</p>
+                
+                <h2>Setting Up GitHub and Publishing to Pages</h2>
+                <p>Setting up GitHub and publishing a webpage using GitHub Pages was a straightforward experience. The process involved creating a repository, configuring the appropriate settings, and pushing my HTML files to the main branch. What I found particularly valuable was how GitHub abstracts away the complexity of web hosting while still providing powerful version control features. Being able to deploy something on the internet is very exciting and I look forward to creating much more and putting out full-on projects through GitHub.</p>
+                
+                <h2>Reflection on Readings: Turing's 1950 Paper and the Internet Today</h2>
+                <p>Reading Alan Turing's <em>Computing Machinery and Intelligence</em> (1950) was a fascinating experience. In his paper, Turing proposed the idea of machines being capable of thinking, introducing what we now call the Turing Test. While the paper was written decades before the internet as we know it, its implications are still relevant today.</p>
+                
+                <p>Diving deeper into Turing's paper, I was struck by his methodical dismantling of objections to machine intelligence. His famous "imitation game" setup, where a human interrogator attempts to determine which of two unseen participants is a machine and which is human, presents a compelling operational definition of intelligence that sidesteps philosophical debates about consciousness. Turing's approach feels remarkably modern in its focus on observable behavior rather than internal mechanisms, a pragmatism that resonates with current approaches to AI evaluation.</p>
+                
+                <p>Particularly prescient was Turing's acknowledgment that machines might think differently from humans, noting that "the interrogator might not get the right conclusion about which was which." This insight anticipated today's reality where AI systems often produce unexpected solutions that don't follow human reasoning patterns. For example, AlphaGo's famous "Move 37" against Lee Sedol in 2016 was initially thought to be a mistake by human experts but proved to be brilliant, showcasing exactly the kind of machine thinking that Turing predicted might confound human judges.</p>
+                
+                <p>With AI chatbots, recommendation algorithms, and machine learning models shaping our digital experiences, we see Turing's ideas come to life. The modern internet is driven by intelligent systems that personalize content, predict user behavior, and automate complex tasks. My experience with GitHub reflects this evolution, automation in version control, AI-powered code suggestions (like GitHub Copilot), and seamless deployment processes that make development more efficient.</p>
+                
+                <h2>Hypertext Theory and Today's Internet</h2>
+                <p>Exploring the theoretical underpinnings of hypertext reveals fascinating connections to our contemporary digital experience. Vannevar Bush's 1945 essay "As We May Think" introduced the concept of the "memex," a theoretical proto-hypertext system designed to supplement human memory by allowing users to create trails of linked information. This revolutionary concept predated the web by decades but anticipated its fundamental structure.</p>
+                
+                <p>Ted Nelson, who coined the term "hypertext" in the 1960s, envisioned a far more radical system than what eventually emerged. His Xanadu project proposed a network where documents would be perpetually accessible, with visible bi-directional links, version tracking, and a micropayment system for authors, a vision that remains partially unrealized even today.</p>
+                
+                <h2>My Goals for This Course</h2>
+                <p>This course is an opportunity for me to deepen my understanding of web development, software engineering, and the broader implications of technology. My goals include:</p>
+                
+                <ul>
+                    <li>Gaining proficiency in version control and collaborative coding using GitHub, particularly focusing on branching strategies and pull request workflows that facilitate team development.</li>
+                    <li>Sharpening my foundational knowledge in web design, with specific attention to responsive design principles and accessibility standards that ensure inclusive user experiences.</li>
+                    <li>Developing a critical perspective on how web technologies shape and are shaped by social factors, exploring the ethical dimensions of design choices.</li>
+                    <li>Building practical skills in modern web development frameworks and tools that will translate directly to professional environments.</li>
+                    <li>Creating a portfolio of work that demonstrates both technical competency and thoughtful engagement with the theoretical aspects of web development.</li>
+                </ul>
+            </div>
+        </article>
 
-      <div class="blog-card h-entry">
-        <h3 class="p-name">WEEK 7 BLOG</h3>
-        <ul class="p-summary">
-          <li>reflections on website design and user experience.</li>
-        </ul>
-        <a href="../Blogs/week7.html" class="u-url"><button>READ MORE</button></a>
-        <time class="dt-published" datetime="2025-03-31">Mar 31, 2025</time>
-      </div>
-      
-      <div class="blog-card h-entry">
-        <h3 class="p-name">Reflections</h3>
-        <ul class="p-summary">
-          <li>UI/UX design reflections, symbols, semiotics, branding insights.</li>
-        </ul>
-        <a href="../Blogs/reflection.html" class="u-url"><button>READ MORE</button></a>
-        <time class="dt-published" datetime="2025-04-10">April 10, 2025</time>
-      </div>
-    </div>
-  </main>
-  
- <script src="../js_scripts/footer.js"></script>
+        <!-- Week 2 Blog -->
+        <article class="blog-content h-entry" data-content="week2">
+            <h2 class="blog-title p-name">WEEK 2 BLOG</h2>
+            <div class="blog-date dt-published">February 24, 2025</div>
+            <div class="blog-body e-content">
+                <p>Website development reflections and continued exploration of web technologies.</p>
+                <!-- Add Week 2 content here when provided -->
+            </div>
+        </article>
+
+        <!-- Week 3 Blog -->
+        <article class="blog-content h-entry" data-content="week3">
+            <h2 class="blog-title p-name">WEEK 3 BLOG</h2>
+            <div class="blog-date dt-published">March 3, 2025</div>
+            <div class="blog-body e-content">
+                <p>Structure, content, and user experience considerations in web development.</p>
+                <!-- Add Week 3 content here when provided -->
+            </div>
+        </article>
+
+        <!-- Week 4 Blog -->
+        <article class="blog-content h-entry" data-content="week4">
+            <h2 class="blog-title p-name">WEEK 4 BLOG</h2>
+            <div class="blog-date dt-published">March 10, 2025</div>
+            <div class="blog-body e-content">
+                <p>HTML development, interaction design, content structure, and future improvements.</p>
+                <!-- Add Week 4 content here when provided -->
+            </div>
+        </article>
+
+        <!-- Week 7 Blog -->
+        <article class="blog-content h-entry" data-content="week7">
+            <h2 class="blog-title p-name">WEEK 7 BLOG</h2>
+            <div class="blog-date dt-published">March 31, 2025</div>
+            <div class="blog-body e-content">
+                <p>Reflections on website design and user experience.</p>
+                <!-- Add Week 7 content here when provided -->
+            </div>
+        </article>
+
+        <!-- Reflections Blog -->
+        <article class="blog-content h-entry" data-content="reflections">
+            <h2 class="blog-title p-name">UI/UX DESIGN REFLECTIONS</h2>
+            <div class="blog-date dt-published">April 10, 2025</div>
+            <div class="blog-body e-content">
+                <p>In my continuous exploration of effective digital design, I have delved into the realm of UI, UX design, influenced by research and methodologies rooted in design thinking, and enriched by insights from symbols and visual signs. A particularly insightful article is <a href="https://sainsmat.org/index.php/jetech/article/view/532/364" target="_blank">UI, UX Design, Web Based Learning Application Using Design Thinking Method, by Winda Suci Lestari Nasution and Patriot Nusa</a>, which presents an in depth study of how iterative design processes and the careful integration of symbols and visual cues can greatly enhance usability and user engagement.</p>
+                
+                <h2>Key Findings and Their Impact on My Design</h2>
+                <p>Nasution and Nusa emphasize that a design thinking approach not only creates efficient task flows, but also leverages semiotic analysis, studying symbols and signs to create interfaces that communicate meaning intuitively, a point that resonates with my commitment to clarity and functionality.</p>
+
+                <h2>Lessons from the ABSA Design Thinking Workshop</h2>
+                <p>I had the opportunity to attend an ABSA Design Thinking Workshop where I explored the power of iteration and user empathy in the design process. One key takeaway was the importance of failing fast and refining quickly through feedback. This mindset directly informed how I approached this website project. From wireframes to final layout, I applied iterative feedback cycles, reworking my UI structure and spacing based on user testing and visual clarity.</p>
+                
+                <p>The workshop also stressed storytelling in UX and aligning design choices with user expectations. This encouraged me to be intentional about my layout flow, ensuring users always know where they are and what to do next. Whether through prominent CTAs, simplified navigation, or consistent iconography, each element serves a purpose grounded in clarity and ease of use.</p>
+                
+                <h2>Symbolism and Semiotics in UI, UX</h2>
+                <p>Symbols, whether they appear in navigation icons, buttons, or subtle typographic accents, serve as visual shorthand for complex ideas. For example, my use of a consistent color palette, where Neon Cyan and Electric Blue punctuate key interactive elements, reinforces familiar cues, builds trust, and communicates order, professionalism, and a tech savvy identity.</p>
+                
+                <h2>Typography, Layout, and Professional Persona</h2>
+                <p>My design philosophy is deeply influenced by the idea that every element, from typography to layout, shapes user perception. By choosing futuristic yet readable fonts like Orbitron for headings and Exo 2 for body text, I convey technological sophistication and approachability. The clear grid based layout and strategic white space work together with these typographic choices to ensure that the interface feels uncluttered, professional, and inviting.</p>
+                
+                <h2>Concluding Thoughts</h2>
+                <p>Integrating the insights from Nasution and Nusa along with experiential learning from the ABSA Workshop has reinforced my belief in the value of iterative, user centered design, as well as the communicative power of symbols, signs, and refined typography. My website aspires to be a digital space that is not only visually impressive, but also exudes professionalism and technical expertise. This approach is fundamental to my ongoing efforts to refine the UI, UX of my work.</p>
+                
+                <p><em>References:</em><br>
+                Nasution, W. S. L., and Nusa, P, (2021), <a href="https://sainsmat.org/index.php/jetech/article/view/532/364" target="_blank">UI, UX Design, Web Based Learning Application Using Design Thinking Method,</a> Sainsmat.</p>
+            </div>
+        </article>
+
+        <p class="p-author h-card" hidden>
+            <span class="p-name">Lubabalo Dlwathi</span>
+        </p>
+    </main>
+
+    <script>
+        // Tab switching functionality - adapted from design page
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.blog-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetSection = this.getAttribute('data-section');
+
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.querySelector(`[data-content="${targetSection}"]`).classList.add('active');
+                });
+            });
+        });
+    </script>
+
+    <script src="../js_scripts/footer.js"></script>
 </body>
 </html>

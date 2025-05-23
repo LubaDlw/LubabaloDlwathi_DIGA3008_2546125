@@ -1,4 +1,4 @@
-// Design page filtering code
+// Website Design page filtering code
 document.addEventListener('DOMContentLoaded', function() {
   const tabs = document.querySelectorAll('.tab');
   const contents = document.querySelectorAll('.design-content');

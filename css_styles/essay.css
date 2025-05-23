@@ -35,11 +35,12 @@
 }
 
 .essay-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 1rem 0;
 }
 
 .tab {
@@ -60,7 +61,7 @@
 .tab.active {
   background-color: #00E5FF;
   color: #ECEFF1;
-  border-color: #00E5FF;
+  /* border-color: #00E5FF; */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }

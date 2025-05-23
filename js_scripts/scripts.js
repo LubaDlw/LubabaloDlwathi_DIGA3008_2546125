@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // null check
     if (!roleElement) {
-      console.error("Role text element not found! Make sure you have an element with id 'role-text'");
+      console.error("Role text element not found");
       return;
     }
     

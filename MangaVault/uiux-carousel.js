@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = document.createElement('img');
      // img.src = `../images/FoodieGem/Screenshot (${i}).png`;
       img.src = ` ./MG_Images/Screenshot (${i}).png `
-      img.alt = `FoodieGem Presentation ${i}`;
+      img.alt = `Manga Vault Presentation ${i}`;
       li.appendChild(img);
       track.appendChild(li);
     }

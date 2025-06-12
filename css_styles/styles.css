@@ -54,6 +54,7 @@ main, .portfolio-content {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   color: #37474F;
+  text-align: center;
 }
 
 nav ul.nav-list {

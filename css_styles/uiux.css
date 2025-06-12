@@ -1,22 +1,4 @@
 /* uiux.css */
-body {
-    margin: 0;
-    font-family: 'Exo 2', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  header {
-  margin-bottom: 1.5rem;
-}
-
- 
-  
   .back-btn {
     color: 37474F;
     text-decoration: none;

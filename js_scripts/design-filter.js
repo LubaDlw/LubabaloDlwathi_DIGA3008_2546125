@@ -1,11 +1,33 @@
-// Website Design page filtering code
+// Website Design page filtering code - Fixed with event delegation
 document.addEventListener('DOMContentLoaded', function() {
-  const tabs = document.querySelectorAll('.tab');
-  const contents = document.querySelectorAll('.design-content');
   
-  // Initialize first tab as active
+  // Event delegation: Single click listener handles all tabs
+  document.addEventListener('click', function(e) {
+    if (e.target.matches('.tab')) {
+      e.preventDefault();
+      const targetSection = e.target.getAttribute('data-section');
+      
+      if (targetSection) {
+        filterContent(targetSection);
+        
+        // Update URL hash for bookmarking (optional)
+        history.pushState(null, null, `#${targetSection}`);
+      }
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.matches('.tab') && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      e.target.click();
+    }
+  });
+  
   function initializeTabs() {
-    // Ensure first tab and content are active on load
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.design-content');
+    
+    // FirstTab active
     if (tabs.length > 0 && contents.length > 0) {
       tabs[0].classList.add('active');
       contents[0].classList.add('active');
@@ -14,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Filter content based on selected tab
   function filterContent(targetSection) {
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.design-content');
+    
     // Remove active class from all tabs and contents
     tabs.forEach(tab => tab.classList.remove('active'));
     contents.forEach(content => content.classList.remove('active'));
@@ -37,29 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // Add click event listeners to tabs
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetSection = this.getAttribute('data-section');
-      
-      if (targetSection) {
-        filterContent(targetSection);
-        
-        // Update URL hash for bookmarking (optional)
-        history.pushState(null, null, `#${targetSection}`);
-      }
-    });
-    
-    // Add keyboard navigation support
-    tab.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        this.click();
-      }
-    });
-  });
-  
   // Handle browser back/forward buttons
   window.addEventListener('popstate', function() {
     const hash = window.location.hash.substring(1);
@@ -67,8 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
       filterContent(hash);
     } else {
       // Default to first tab if no hash
-      if (tabs.length > 0) {
-        const firstSection = tabs[0].getAttribute('data-section');
+      const firstTab = document.querySelector('.tab');
+      if (firstTab) {
+        const firstSection = firstTab.getAttribute('data-section');
         filterContent(firstSection);
       }
     }
@@ -87,15 +90,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // Initialize the page
-  handleInitialHash();
-  
   // Add smooth transitions for content switching
   function addTransitionEffects() {
+    const contents = document.querySelectorAll('.design-content');
     contents.forEach(content => {
       content.style.transition = 'opacity 0.3s ease-in-out';
     });
   }
   
+  // Initialize the page
+  handleInitialHash();
   addTransitionEffects();
 });

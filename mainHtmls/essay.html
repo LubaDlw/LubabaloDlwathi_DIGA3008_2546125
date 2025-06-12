@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="../css_styles/styles.css" />
   <link rel="stylesheet" href="../css_styles/essay.css" />
   <link rel="stylesheet" href="../css_styles/responsive.css">
-  <script src="../js_scripts/footer.js" defer></script>
+   <script src="../js_scripts/footer.js" defer></script>
+   <script src="../js_scripts/essay.js" defer></script>
 </head>
 <body>
   <header>
@@ -198,32 +199,5 @@
       </div>
     </article>
   </main>
-  
-  <script src="../js_scripts/footer.js" defer></script>
-  <script>
-    // Simple tab functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const tabs = document.querySelectorAll('.tab');
-      const essays = document.querySelectorAll('.essay-content');
-      
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-          // Remove active class from all tabs
-          tabs.forEach(t => t.classList.remove('active'));
-          // Add active class to clicked tab
-          this.classList.add('active');
-          
-          // Hide all essays
-          essays.forEach(essay => essay.style.display = 'none');
-          
-          // Show selected essay
-          const essayId = this.getAttribute('data-essay');
-          if (essayId) {
-            document.getElementById(essayId).style.display = 'block';
-          }
-        });
-      });
-    });
-  </script>
 </body>
 </html>

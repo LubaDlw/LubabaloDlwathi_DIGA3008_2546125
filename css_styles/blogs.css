@@ -50,8 +50,7 @@
   letter-spacing: 0.5px;
 }
 
-.tab:hover,
-.tab.active {
+.tab:hover, .tab.active {
   background-color: #00E5FF;
   color: #ECEFF1;
   transform: translateY(-2px);
@@ -134,32 +133,139 @@
   text-decoration: underline;
 }
 
+/* Blog Navigation Styles */
+.blog-navigation {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #B0BEC5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn {
+  padding: 0.75rem 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  background-color: transparent;
+  border: 2px solid #37474F;
+  color: #37474F;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: #00E5FF;
+  color: #ECEFF1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.nav-btn:disabled:hover {
+  background-color: transparent;
+  color: #37474F;
+  box-shadow: none;
+}
+
+.nav-btn.view-all {
+  background-color: #37474F;
+  color: #ECEFF1;
+  border-color: #37474F;
+}
+
+.nav-btn.view-all:hover {
+  background-color: #00E5FF;
+  border-color: #00E5FF;
+}
+
+.nav-info {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  color: #B0BEC5;
+  margin-top: 0.5rem;
+}
+
+/* Arrow icons for navigation buttons */
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 0.8rem;
+}
+
+.nav-btn.prev::before {
+  content: '←';
+}
+
+.nav-btn.next::after {
+  content: '→';
+}
+
+.nav-btn.view-all::before {
+  content: '≡';
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .blog-wrapper {
     padding: 2rem 0.5rem;
     padding-top: 5rem;
   }
-  
+    
   .blog-tabs {
     gap: 0.25rem;
   }
-  
+    
   .tab {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
-  
+    
   .blog-content {
     padding: 1.5rem;
   }
-  
+    
   .blog-title {
     font-size: 1.5rem;
   }
-  
+    
   .blog-body h2 {
     font-size: 1.2rem;
+  }
+
+  .blog-navigation {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .nav-buttons {
+    gap: 0.5rem;
+  }
+
+  .nav-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -167,18 +273,29 @@
   .section-title {
     font-size: 1.75rem;
   }
-  
+    
   .subtitle {
     font-size: 0.9rem;
   }
-  
+    
   .blog-tabs {
     flex-direction: column;
     align-items: center;
   }
-  
+    
   .tab {
     width: 200px;
     text-align: center;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-btn {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
   }
 }

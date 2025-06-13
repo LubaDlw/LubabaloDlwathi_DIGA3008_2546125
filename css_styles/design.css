@@ -1,9 +1,8 @@
-/* Design page filtered styles */
+/* Design page specific styles */
 .design-wrapper {
   padding: 3rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
-  font-family: 'Exo 2', sans-serif;
   padding-top: 5.5rem;
 }
 
@@ -29,7 +28,7 @@
 }
 
 .design-tabs {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
@@ -53,9 +52,8 @@ display: flex;
 
 .tab:hover,
 .tab.active {
-    background-color: #00E5FF;
+  background-color: #00E5FF;
   color: #ECEFF1;
-  /* border-color: #00E5FF; */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
@@ -99,6 +97,7 @@ display: flex;
 
 .design-body ul {
   margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .design-body li {

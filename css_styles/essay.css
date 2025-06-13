@@ -1,11 +1,10 @@
-/* Essay page styles */
+/* essay.css - Essay page specific styles */
+
 .essay-wrapper {
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Exo 2', sans-serif;
   padding-top: 5.5rem;
-  line-height: 1.6;
 }
 
 .essay-hero {
@@ -35,7 +34,7 @@
 }
 
 .essay-tabs {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
@@ -61,7 +60,6 @@ display: flex;
 .tab.active {
   background-color: #00E5FF;
   color: #ECEFF1;
-  /* border-color: #00E5FF; */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
@@ -129,10 +127,9 @@ display: flex;
   font-weight: 500;
   color: #37474F;
   border-left: 4px solid #00E5FF;
-  padding-left: 1.5rem;
+  padding: 1.5rem;
   margin-bottom: 2rem;
   background-color: #F8FFFE;
-  padding: 1.5rem;
   border-radius: 0.5rem;
   font-style: italic;
 }
@@ -219,7 +216,7 @@ display: flex;
   color: #37474F;
 }
 
-/* Responsive Design */
+/* Mobile-specific overrides */
 @media (max-width: 768px) {
   .essay-wrapper {
     padding: 2rem 0.5rem;

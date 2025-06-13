@@ -1,70 +1,65 @@
-/* responsive.css */
+/* responsive.css - Mobile Navigation Only */
 
 /* Hide the checkbox by default */
 .nav-toggle {
     display: none;
-  }
-  
-  /* Default: Hide burger icon on larger screens */
-  .burger {
+}
+
+/* Default: Hide burger icon on larger screens */
+.burger {
     display: none;
     cursor: pointer;
-  }
-  
-  .burger span {
+}
+
+.burger span {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px;
-    background: #37474F; /* matching primary text color */
+    background: #37474F;
     transition: all 0.3s ease;
-  }
-  
-  /* Media Query for smaller screens */
-  @media (max-width: 768px) {
-  
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
     /* Show the burger icon */
     .burger {
-      display: block;
+        display: block;
     }
-  
+
     /* Hide the standard navigation menu by default */
     nav ul.nav-list {
-      position: absolute;
-      top: 70px; /* adjust based on your header height */
-      right: 0;
-      width: 100%;
-      background-color: #ECEFF1;
-      flex-direction: column;
-      align-items: center;
-      display: none; /* Hidden by default */
-      padding: 1rem 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      z-index: 999;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #ECEFF1;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
-  
-    /* When the checkbox is checked, display the navigation menu */
+
     #nav-toggle:checked ~ nav ul.nav-list {
-      display: flex;
+        display: flex;
     }
-  
-    /* Mobile styling for individual navigation items */
+
     nav ul.nav-list li {
-      margin: 0.5rem 0;
+        margin: 0.5rem 0;
     }
-  }
-  
-  /* Optional: Animate the burger icon transformation when toggled */
-  @media (max-width: 768px) {
-    /* When the nav-toggle is checked, style the burger spans */
+
+    /* Burger animation when menu is open */
     #nav-toggle:checked + .burger span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 5px);
     }
+    
     #nav-toggle:checked + .burger span:nth-child(2) {
-      opacity: 0;
+        opacity: 0;
     }
+    
     #nav-toggle:checked + .burger span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(5px, -5px);
     }
-  }
-  
+}

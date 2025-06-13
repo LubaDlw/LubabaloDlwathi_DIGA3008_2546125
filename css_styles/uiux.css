@@ -1,55 +1,57 @@
-/* uiux.css */
-  .back-btn {
-    color: 37474F;
+/* uiux.css - UI/UX Page Specific Styles */
+
+.back-btn {
+    color: #37474F;
     text-decoration: none;
     font-size: 1rem;
     border: 1px solid white;
     padding: 0.5rem 1rem;
     border-radius: 2px;
     transition: background-color 0.3s ease;
-  }
-  
-  .back-btn:hover {
+}
+
+.back-btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  .carousel-container {
+}
+
+/* Carousel Styles */
+.carousel-container {
     position: relative;
     overflow: hidden;
     margin: 2rem auto;
     max-width: 800px;
-  }
-  
-  .carousel {
+}
+
+.carousel {
     display: flex;
     align-items: center;
-  }
-  
-  .carousel-track-container {
+}
+
+.carousel-track-container {
     overflow: hidden;
     width: 100%;
-  }
-  
-  .carousel-track {
+}
+
+.carousel-track {
     display: flex;
     transition: transform 0.5s ease;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .carousel-track li {
+}
+
+.carousel-track li {
     min-width: 100%;
     box-sizing: border-box;
-  }
-  
-  .carousel-track img {
+}
+
+.carousel-track img {
     width: 100%;
     display: block;
     border-radius: 8px;
-  }
-  
-  .carousel-btn {
+}
+
+.carousel-btn {
     background: none;
     border: none;
     font-size: 2rem;
@@ -57,60 +59,60 @@
     padding: 0 1rem;
     user-select: none;
     transition: color 0.2s ease;
-  }
-  
-  .carousel-btn:hover {
+}
+
+.carousel-btn:hover {
     color: #536DFE;
-  }
-  
-  .carousel-description {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  padding: 0 1rem;
-  margin-top: 2rem;
+}
+
+.carousel-description {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
 }
 
 .carousel-description h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #37474F;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #37474F;
 }
 
 .carousel-description p {
-  font-size: 1rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto;
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
+/* Mobile-specific overrides for carousel page */
 @media (max-width: 768px) {
-  .carousel-btn {
-    font-size: 1.5rem;
-    padding: 0 0.5rem;
-  }
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
 
-  .carousel-description h2 {
-    font-size: 1.25rem;
-  }
+    .carousel-description h2 {
+        font-size: 1.25rem;
+    }
 
-  .carousel-description p {
-    font-size: 0.95rem;
-  }
+    .carousel-description p {
+        font-size: 0.95rem;
+    }
 
-  .back-btn {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-  }
+    .back-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
 
-  .site-title {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+    /* Override global styles for this page's header layout */
+    .site-title {
+        font-size: 1.2rem;
+    }
 
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    
-  }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }

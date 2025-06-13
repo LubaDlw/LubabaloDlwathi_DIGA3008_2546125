@@ -46,6 +46,7 @@
       <div class="essay-tabs">
         <button class="tab active" data-essay="essay1">Essay 1</button>
         <button class="tab" data-essay="essay2">ESSAY 2</button>
+        <button class="tab" data-essay="essay3">Reflection</button>
       </div>
     </section>
 
@@ -55,7 +56,7 @@
         <div class="essay-meta">
           <span class="course-code">DIGA3008A - Essay 1</span>
           <span class="student-id">Student ID: 2546125</span>
-          <span class="word-count">Word Count: ~3,200</span>
+          <span class="word-count">Word Count: ~2500</span>
         </div>
       </div>
       
@@ -282,6 +283,96 @@
     <span class="p-name">Lubabalo Dlwathi</span>
   </p>
 </article>
+
+ <article class="essay-content h-entry" id="essay3">
+        <div class="essay-header">
+            <h1 class="essay-title p-name">My Website Development Journey: What I Learned</h1>
+            <div class="essay-meta">
+                <span class="course-code">Web Development Portfolio</span>
+                <span class="student-id">Reflection Essay</span>
+                <span class="word-count">Word Count: ~1800</span>
+            </div>
+        </div>
+        
+        <div class="essay-body e-content">
+            <!-- Introduction -->
+            <section class="essay-section">
+                <p>Looking back on this semester's web development project, I learned much more than just how to write code. Sure, I figured out how to make things work, but more importantly, I discovered what it takes to build something that people want to use. What started as just another assignment turned into this whole personal journey of figuring out how my design and code decisions could tell my story as a developer.</p>
+            </section>
+
+            <!-- File Organization -->
+            <section class="essay-section">
+                <h2 class="section-heading">Getting My Files Organized (And Why It Matters More Than I Thought)</h2>
+                <p>I was utterly overwhelmed by all the files I created when I started this project. I'd done small coding exercises before, but suddenly, I had to think about where everything should go. It felt like organising a massive library when you've never used the filing system.</p>
+                <p>Good organisation isn't just about making your life easier as a developer. It's about creating something that makes sense to anyone who might look at your code later – including yourself six months down the line when you've completely forgotten why you did certain things.</p>
+                <p>I learned this the hard way when I returned to my project after a few week's break and spent hours figuring out my file structure. That frustration taught me something important: organising your code well is being kind to your future self.</p>
+                <p>I kept most of my JavaScript in separate files and organised my CSS in clear folders. But then I completely broke my rules with my showcase projects – Manga Vault, FoodieGem, and Beauty AI. At first, this inconsistency bothered me. I felt like I was being sloppy. But then I realised that each project had its personality and needs that my generic organisation system couldn't handle. Sometimes, being flexible is more important than following rigid rules.</p>
+                <p>The blog section was where I learned this lesson. I created separate HTML pages for each blog post, with individual CSS files. I was so proud of how thorough I was being! Then I realised I'd created a maintenance nightmare. Wanting to change the navigation meant editing dozens of files. The frustration of that discovery made me completely restructure everything into a single-page solution with dynamic content loading. Sometimes, the best solution comes from admitting you messed up and having the guts to start over.</p>
+            </section>
+
+            <!-- Local vs Online -->
+            <section class="essay-section">
+                <h2 class="section-heading">When Your Code Works Locally But Breaks Online</h2>
+                <p>Nothing quite prepares you for that sinking feeling when code that works perfectly on your computer just... doesn't work when you put it online. I remember pushing my site to GitHub Pages for the first time and watching features I'd spent hours on simply fail to load.</p>
+                <p>The difference between my local setup and GitHub Pages became a brutal education in not making assumptions. My local environment was way more forgiving than I realised. File paths that worked on my laptop would break online, and code that seemed fine locally would fail in production.</p>
+                <p>I spent so many hours debugging what felt like mysterious problems, only to discover the issue was something as simple as a case-sensitive file path that my laptop ignored but the live server didn't. These failures taught me to develop what I now call "deployment paranoia" – constantly questioning whether my code will actually work in different environments.</p>
+                <p>This experience showed me the vast difference between learning to code and building reliable software. Making something work is one thing. Making something that works consistently across different environments? That's a whole other challenge.</p>
+            </section>
+
+            <!-- JavaScript Challenges -->
+            <section class="essay-section">
+                <h2 class="section-heading">JavaScript: Where I Hit My Biggest Walls and Breakthroughs</h2>
+                <p>JavaScript is where I experienced my highest highs and lowest lows. I understood event handling until I built something complex enough to show how much I didn't know. Watching my site slow down as people used it was both puzzling and embarrassing – I was creating memory leaks without realising it.</p>
+                <p>The problem was sneaky. Interactions would get sluggish, and I couldn't figure out why. It took me way too long to realise I was attaching event listeners to individual elements instead of using event delegation. Every interaction was adding to this growing performance burden.</p>
+                <p>When I finally understood what was happening, I felt frustrated with myself but also excited to fix it. Learning about event delegation was like discovering a cheat code. Instead of managing dozens of individual event listeners, I could attach one to a parent element and let it handle everything. The performance improvement was immediate and immense.</p>
+                <p>The blog consolidation project became where I tested these new skills. Turning multiple static pages into one dynamic interface required careful DOM manipulation. I still remember the satisfaction of getting smooth transitions working and seeing content load without page refreshes. It felt like magic.</p>
+                <p>But the biggest lesson was learning about performance from the user's perspective. Code doesn't just need to work – it needs to work well. Every piece of JavaScript affects someone's experience of your site, and that responsibility became a driving force in how I approached everything else.</p>
+            </section>
+
+            <!-- CSS Organization -->
+            <section class="essay-section">
+                <h2 class="section-heading">CSS: From Chaos to System</h2>
+                <p>CSS became both my creative outlet and my biggest organisational headache. I love the visual side of web development; seeing designs come to life through code is fantastic. However, I initially treated CSS as a bunch of individual styling decisions rather than a connected system, leading to what I can only describe as complete CSS chaos.</p>
+                <p>I had styles scattered everywhere, creating situations where fixing one visual problem would break something else entirely. Different parts of my site had different button styles, inconsistent spacing, and conflicting colours. It looked unprofessional, but more importantly, it felt unprofessional.</p>
+                <p>The solution meant completely changing how I approached CSS. I centralised global styles into one main stylesheet, creating my site's "visual vocabulary" – consistent colours, typography, spacing, and component styles that could be used throughout.</p>
+                <p>Going through and consolidating everything was tedious but eye-opening. I had to review every CSS rule, identify duplicates and conflicts, and decide the "official" version of each style. It was like editing a messy first draft.</p>
+                <p>The transformation was immediately apparent. My site suddenly looked cohesive and professional. More importantly, making changes became so much easier. When I wanted to adjust colours or modify button styles, I could do it in one place and see it change everywhere. This taught me that good CSS organisation isn't just about keeping code tidy – it's about creating a system that supports consistent user experiences.</p>
+            </section>
+
+            <!-- Accessibility -->
+            <section class="essay-section">
+                <h2 class="section-heading">Accessibility: The Game-Changer That Made Me a Better Developer</h2>
+                <p>Accessibility was where I grew the most, not just as a developer but also as a person. At first, I approached semantic markup as just another technical requirement, something I needed to check off to meet standards. I understood the theory but didn't grasp why it mattered beyond compliance.</p>
+                <p>Everything changed when I started using accessibility tools to experience my site from different perspectives. Using a screen reader to navigate my content was eye-opening and humbling. Hearing my carefully crafted visual design reduced to monotone announcements made me realise how much I'd been assuming about how people experience websites.</p>
+                <p>My colour choices looked great but created terrible contrast for users with visual impairments. My heading structure made visual sense but was confusing when navigated by assistive technology. These weren't abstract problems – I accidentally created barriers for real people.</p>
+                <p>Fixing this required more than just technical changes; it required genuine empathy for different user experiences. I redesigned my colour palette with contrast ratios in mind, restructured my headings to create logical navigation paths, and rewrote alt text to describe what was important rather than just what was technically there.</p>
+                <p>This process completely changed how I think about web development. Accessibility isn't something you add on top of existing work – it's a lens for viewing all your design and development decisions. Every choice includes or excludes potential users, and that responsibility has become central to how I approach everything.</p>
+            </section>
+
+            <!-- Metadata -->
+            <section class="essay-section">
+                <h2 class="section-heading">Metadata: The Invisible Stuff That Matters</h2>
+                <p>Metadata felt like behind-the-scenes work that nobody would notice until I realised how much it affects first impressions. When I started sharing my portfolio with friends and mentors, I was horrified to see how terrible my links looked on social media and how unhelpful my search results were.</p>
+                <p>Implementing proper metadata became an exercise in thinking about how people might encounter my work. Search engines needed certain information, social media platforms needed others, and mobile browsers had different requirements than desktop versions. Each meta tag represented a potential first impression of my work.</p>
+                <p>The improvement was immediately evident in how my site presented itself across different platforms. Search results became more informative and appealing, social media shares generated proper preview cards, and the site behaved consistently across devices. These seemingly invisible technical elements had surprisingly visible impacts.</p>
+                <p>This taught me that professional web development goes beyond what users see on the page. The quality of behind-the-scenes work affects how discoverable, shareable, and consistent your site is across platforms. Good metadata is like good manners; you might not notice it when it's there, but you see it when it's missing.</p>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="essay-section">
+                <h2 class="section-heading">Putting It All Together: Building Something That Works</h2>
+                <p>Everything I learned served one main goal: creating a portfolio that would effectively show potential employers what I could do while giving them insight into who I am as a person and problem-solver. This wasn't just about showing off technical skills; it was about telling my story through code and design decisions.</p>
+                <p>Every technical choice, from how I organised files to how I handled events, was ultimately judged on how well it would serve recruiters trying to understand my capabilities. The site needed to demonstrate technical skills while staying engaging and showing my personality. This balance required constantly thinking about what my audience needed and expected.</p>
+                <p>My challenges, from accessibility to performance to visual consistency, ultimately helped me understand how technical excellence serves human needs. Each problem I solved taught me something not just about code but also about communication, empathy, and professional presentation.</p>
+                <p>Most importantly, this experience taught me that web development is fundamentally about serving human needs through technology. Every technical decision should support user goals, whether finding information quickly, forming positive impressions, or having smooth interactions. The code I write isn't just functional – it's communicative, expressing my values and approach to problem-solving.</p>
+                <p>Moving forward, good web development requires constantly thinking about how technical implementation and human experience intersect. Clean code and thoughtful design must work together to create meaningful digital experiences for real people. This portfolio became more than just a showcase of my technical abilities – it reflected my growth as a developer and someone who creates technology to serve others.</p>
+            </section>
+        </div>
+        
+        <p class="p-author h-card">
+            <span class="p-name">Web Development Student</span>
+        </p>
+    </article>
   </main>
 </body>
 </html>

@@ -51,7 +51,7 @@
 }
 
 .tab:hover, .tab.active {
-  background-color: #00E5FF;
+  background-color: #37474F;
   color: #ECEFF1;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
@@ -114,7 +114,7 @@
 }
 
 .blog-body strong {
-  color: #00E5FF;
+  color: #37474F;
 }
 
 .blog-body em {
@@ -123,7 +123,7 @@
 }
 
 .blog-body a {
-  color: #00E5FF;
+  color: #37474F;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -171,7 +171,7 @@
 }
 
 .nav-btn:hover {
-  background-color: #00E5FF;
+  background-color: #37474F;
   color: #ECEFF1;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
@@ -196,7 +196,7 @@
 }
 
 .nav-btn.view-all:hover {
-  background-color: #00E5FF;
+  background-color: #37474F;
   border-color: #00E5FF;
 }
 

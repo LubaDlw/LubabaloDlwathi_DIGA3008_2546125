@@ -66,7 +66,7 @@ nav ul.nav-list li a {
 
 nav ul.nav-list li a:hover,
 nav ul.nav-list li a.active {
-  color: #00E5FF;
+  color: #536DFE;
 }
 
 nav ul.nav-list li a.active {
@@ -103,7 +103,7 @@ nav ul.nav-list li a.active {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #536DFE;
+  color: #37474F;
 }
 
 .hero-text p {
@@ -125,25 +125,30 @@ nav ul.nav-list li a.active {
 }
 
 .btn.primary {
-  background-color: #536DFE;
+  background-color: #37474F;
   color: #ECEFF1;
-  border-color: #536DFE;
+  
 }
 
+
 .btn.primary:hover {
-  background-color: #00E5FF;
-  border-color: #00E5FF;
+  background-color: #37474F;
+  color: #ECEFF1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
 
 .btn.secondary {
   background-color: transparent;
-  color: #536DFE;
-  border: 2px solid #536DFE;
+  color: #37474F;
+  border: 2px solid #37474F;
 }
 
 .btn.secondary:hover {
-  border-color: #00E5FF;
-  color: #00E5FF;
+  background-color: #37474F;
+  color: #ECEFF1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
 
 .hero-image {
@@ -210,17 +215,21 @@ nav ul.nav-list li a.active {
 }
 
 .featured-item figcaption .btn {
-  background-color: #536DFE;
-  color: #ECEFF1;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #37474F;
+  color: white;
   border: none;
   padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace;
+  border-radius: 2px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .featured-item figcaption .btn:hover {
-  background-color: #00E5FF;
+  background-color: #37474F;
+  color: #ECEFF1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
 
 /* Footer */
@@ -294,7 +303,7 @@ footer .copyright {
 
 #role-text {
   position: relative;
-  color: #00E5FF; 
+  color: #536DFE; 
   transition: opacity 0.5s ease-in-out;
   display: inline-block;
 }

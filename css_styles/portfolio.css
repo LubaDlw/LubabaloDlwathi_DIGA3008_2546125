@@ -34,8 +34,8 @@ main > p {
 .category-nav a button {
   font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
-  background-color: #00E5FF;
-  color: white;
+  background-color: #37474F;
+  color:#ECEFF1;
   border: none;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
@@ -44,8 +44,15 @@ main > p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tab:hover,
+.tab.active {
+  background-color: #37474F;
+  color: #ECEFF1;      
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+}
 .category-nav a button:hover {
-  background-color: #00E5FF;
+  background-color: #37474F;
   color: #37474F;
   transform: translateY(-2px);
 }
@@ -104,7 +111,7 @@ article ul {
 
 article button {
   font-family: 'Roboto Mono', monospace;
-  background-color: #00E5FF;
+  background-color: #37474F;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -114,9 +121,13 @@ article button {
 }
 
 article button:hover {
-  background-color: #00E5FF;
-  color: #37474F;
+  background-color: #37474F;
+  color: #ECEFF1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
+
+
 
 /* Filter Buttons */
 .filter-btn {
@@ -135,9 +146,10 @@ article button:hover {
 
 .filter-btn:hover, 
 .filter-btn.active {
-  background-color: #00E5FF;
+  background-color: #37474F;
   color: white;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
 
 /* Project Item Animations */
